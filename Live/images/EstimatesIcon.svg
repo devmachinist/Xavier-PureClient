@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1500 1500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1.01238,0,0,1.38889,-1.49178,-318.452)">
+        <path d="M1322.92,540.536C1322.92,419.607 1188.22,321.429 1022.32,321.429L421.131,321.429C255.228,321.429 120.536,419.607 120.536,540.536L120.536,1013.04C120.536,1133.96 255.228,1232.14 421.131,1232.14L1022.32,1232.14C1188.22,1232.14 1322.92,1133.96 1322.92,1013.04L1322.92,540.536Z" style="fill:rgb(23,219,109);stroke:black;stroke-width:82.18px;"/>
+    </g>
+    <g id="Location" transform="matrix(4.82701,0,0,4.82701,-43743.2,-1149.24)">
+        <g transform="matrix(1,0,0,1,2111,-400.993)">
+            <circle cx="7099" cy="798" r="80" style="fill:white;"/>
+            <path d="M7099,718C7143.15,718 7179,753.847 7179,798C7179,842.153 7143.15,878 7099,878C7054.85,878 7019,842.153 7019,798C7019,753.847 7054.85,718 7099,718ZM7099,726.081C7138.69,726.081 7170.92,758.307 7170.92,798C7170.92,837.693 7138.69,869.919 7099,869.919C7059.31,869.919 7027.08,837.693 7027.08,798C7027.08,758.307 7059.31,726.081 7099,726.081Z"/>
+        </g>
+        <g transform="matrix(2,0,0,2,8727.01,161.014)">
+            <path d="M256.824,104.181C257.278,103.17 256.823,102.716 255.819,103.161L227.054,115.918C225.54,116.589 225.665,117.134 227.313,117.134L243.12,117.134L243.12,131.681C243.12,133.335 243.672,133.449 244.346,131.948L256.824,104.181Z" style="fill:white;fill-opacity:0.5;stroke:black;stroke-width:4.04px;stroke-linecap:butt;stroke-miterlimit:2;"/>
+        </g>
+    </g>
+</svg>

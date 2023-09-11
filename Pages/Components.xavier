@@ -1,0 +1,92 @@
+@page
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xavier | Components</title>
+  <link rel="stylesheet" href="/css/dist/Site.css" />
+  <link rel="stylesheet" href="/css/fontello/fontello-330f88e4/css/fontello.css">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+
+<body class="bg-gray-100 scrollbar">
+    <xnav id="MainNav"
+          logo="./favicon-96x96.png"
+          home="/"
+          name="avier" titlestyle="font-family:cursive; font:1.8em #00F"
+          fg="white" bg="#3A3F58"
+          menubg="#3A3F58"
+          class="top-0 w-screen fixed left-0 flex mx-0 z-[3001]"></xnav>
+
+
+  <div class="container mx-auto mt-24 px-4 py-8">
+    <h1 class="text-4xl font-bold mb-6">Creating Xavier Components</h1>
+    <p class="mb-4">Xavier components are the building blocks of your web application. They combine HTML markup, CSS styles, and dynamic behavior to create reusable and modular UI elements. In Xavier, each component consists of two files:</p>
+    <ul class="list-disc list-inside mb-6">
+      <li><strong>Xavier Component (*.xavier):</strong> The markup file that defines the structure and appearance of the component.</li>
+      <li><strong>Code Behind (*.xavier.cs):</strong> The code file that contains the logic and behavior of the component.</li>
+    </ul>
+
+    <h2 class="text-2xl font-bold mb-4">Defining Xavier Components</h2>
+    <p class="mb-4">To create a Xavier component:</p>
+    <ol class="list-decimal list-inside mb-6">
+      <li>Create a new file with the extension <code>.xavier</code> and give it a meaningful name. This file will contain the HTML markup and Xavier-specific syntax.</li>
+      <li>Create a corresponding code-behind file with the extension <code>.xavier.cs</code>. This file will contain the C# code that defines the component's behavior and properties.</li>
+    </ol>
+
+    <h2 class="text-2xl font-bold mb-4">Xavier Component Structure</h2>
+    <p class="mb-4">A Xavier component typically follows this structure:</p>
+    <div class="bg-white rounded-lg p-4 shadow mb-6">
+      <pre class="text-sm"><code>&lt;!-- MyComponent.xavier --&gt;
+&lt;template&gt;
+  &lt;div class="my-component"&gt;
+    &lt;h2&gt;${this.Title}&lt;/h2&gt;
+    &lt;p&gt;${this.Description}&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/template&gt;</code></pre>
+    </div>
+    <div class="bg-white text-sm whitespace-pre overflow-x-auto rounded-lg p-4 shadow mb-6">
+      // MyComponent.xavier.cs<br/>
+public class MyComponent : XavierNode { 
+    public string Title { get; set; } = "Default Title";    
+    public string Description { get; set; } = "Default Description";
+    new public bool? ShouldRender { get; set; } = true;
+
+    public MyComponent(){
+        //Standard Contructor
+    }
+    public MyComponent(XavierNode x){
+        //Both Constructors must be included
+    }
+}
+    </div>
+
+    <h2 class="text-2xl font-bold mb-4">Accessing Attributes in the Template</h2>
+    <p class="mb-4">To access the component's attributes in the template, use the syntax <code>${this.Attribute}</code>. For example, <code>${this.Title}</code> and <code>${this.Description}</code> in the above code snippet.</p>
+
+    <h
+
+2 class="text-2xl font-bold mb-4">Overriding the ShouldRender Property</h2>
+    <p class="mb-4">To control the rendering behavior of your component in JavaScript, you can override the <code>ShouldRender</code> property. This property determines whether the component should render or not.</p>
+    <div class="bg-white whitespace-pre overflow-x-auto text-sm rounded-lg p-4 shadow mb-6">
+      new public bool? ShouldRender { get; set; } = true;
+    </div>
+
+    <p class="mb-4">By default, the <code>ShouldRender</code> property is set to <code>true</code>, indicating that the component should render. You can modify this property to control when the component should update its rendering.</p>
+
+    <p class="mb-4">Remember that you can override other properties and add additional properties and methods to customize the behavior and functionality of your Xavier components.</p>
+
+  </div>
+
+    {{
+    var hw = Documentation.HelloWorld().then(r => {return r});
+    console.log(hw);
+    window.hw = hw;
+    }}
+
+    <script src="Xavier.js" type="module" async="" >
+    </script >
+  </body>
+</html>

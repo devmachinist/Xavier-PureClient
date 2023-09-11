@@ -1,0 +1,497 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Matthew Teague",
+    "classifications": [
+        "Web"
+    ],
+    "name": "Xavier Terminal Component",
+    "shortName": "xterm",
+    "identity": "XavierBlank",
+    "tags": {
+        "language": "C#",
+        "type": "item"
+    },
+    "preferNameDirectory": true,
+    "symbols": {
+        "BackgroundColor": {
+            "type": "parameter",
+            "replaces":"TemplateBackground",
+            "datatype": "choice",
+            "defaultValue": "aliceblue",
+            "choices": [
+                {
+                    "choice": "aliceblue",
+                    "description": "Alice Blue"
+                },
+                {
+                    "choice": "DimGray",
+                    "description": "DimGray"
+                },
+                {
+                    "choice": "Crimson",
+                    "description": "Crimson"
+                },
+                {
+                    "choice": "Darkslateblue",
+                    "description": "Darkslateblue"
+                },
+                {
+                    "choice": "Forestgreen",
+                    "description": "Forestgreen"
+                },
+                {
+                    "choice": "Midnightblue",
+                    "description": "Midnightblue"
+                },
+                {
+                    "choice": "Orangered",
+                    "description": "Orangered"
+                },
+                {
+                    "choice": "Palevioletred",
+                    "description": "Palevioletred"
+                },
+                {
+                    "choice": "Steelblue",
+                    "description": "Steelblue"
+                },
+                {
+                    "choice": "Tan",
+                    "description": "Tan"
+                },
+                {
+                    "choice": "Teal",
+                    "description": "Teal"
+                }
+            ]
+        },
+        "PrimaryColor": {
+            "type": "parameter",
+            "replaces":"TemplatePrimary",
+            "datatype": "choice",
+            "defaultValue": "Blue",
+            "choices": [
+                {
+                    "choice": "Blue",
+                    "description": "Blue"
+                },
+                {
+                    "choice": "BlueViolet",
+                    "description": "BlueViolet"
+                },
+                {
+                    "choice": "CadetBlue",
+                    "description": "CadetBlue"
+                },
+                {
+                    "choice": "Crimson",
+                    "description": "Crimson"
+                },
+                {
+                    "choice": "Cyan",
+                    "description": "Cyan"
+                },
+                {
+                    "choice": "DarkBlue",
+                    "description": "DarkBlue"
+                },
+                {
+                    "choice": "DarkMagenta",
+                    "description": "DarkMagenta"
+                },
+                {
+                    "choice": "DarkOrange",
+                    "description": "DarkOrange"
+                },
+                {
+                    "choice": "DarkOrchid",
+                    "description": "DarkOrchid"
+                },
+                {
+                    "choice": "DarkRed",
+                    "description": "DarkRed"
+                },
+                {
+                    "choice": "DarkTurquoise",
+                    "description": "DarkTurquoise"
+                },
+                {
+                    "choice": "DarkViolet",
+                    "description": "DarkViolet"
+                },
+                {
+                    "choice": "DeepPink",
+                    "description": "DeepPink"
+                },
+                {
+                    "choice": "ForestGreen",
+                    "description": "ForestGreen"
+                },
+                {
+                    "choice": "Fuchsia",
+                    "description": "Fuchsia"
+                },
+                {
+                    "choice": "Goldenrod",
+                    "description": "Goldenrod"
+                },
+                {
+                    "choice": "Green",
+                    "description": "Green"
+                },
+                {
+                    "choice": "HotPink",
+                    "description": "HotPink"
+                },
+                {
+                    "choice": "Indigo",
+                    "description": "Indigo"
+                },
+                {
+                    "choice": "LimeGreen",
+                    "description": "LimeGreen"
+                },
+                {
+                    "choice": "Maroon",
+                    "description": "Maroon"
+                },
+                {
+                    "choice": "MediumAquaMarine",
+                    "description": "MediumAquaMarine"
+                },
+                {
+                    "choice": "MediumBlue",
+                    "description": "MediumBlue"
+                },
+                {
+                    "choice": "MediumOrchid",
+                    "description": "MediumOrchid"
+                },
+                {
+                    "choice": "MediumSeaGreen",
+                    "description": "MediumSeaGreen"
+                },
+                {
+                    "choice": "MediumVioletRed",
+                    "description": "MediumVioletRed"
+                },
+                {
+                    "choice": "MidnightBlue",
+                    "description": "MidnightBlue"
+                },
+                {
+                    "choice": "Navy",
+                    "description": "Navy"
+                },
+                {
+                    "choice": "Olive",
+                    "description": "Olive"
+                },
+                {
+                    "choice": "Orange",
+                    "description": "Orange"
+                },
+                {
+                    "choice": "OrangeRed",
+                    "description": "OrangeRed"
+                },
+                {
+                    "choice": "Purple",
+                    "description": "Purple"
+                },
+                {
+                    "choice": "Red",
+                    "description": "Red"
+                },
+                {
+                    "choice": "RosyBrown",
+                    "description": "RosyBrown"
+                },
+                {
+                    "choice": "RoyalBlue",
+                    "description": "RoyalBlue"
+                },
+                {
+                    "choice": "SeaGreen",
+                    "description": "SeaGreen"
+                },
+                {
+                    "choice": "Silver",
+                    "description": "Silver"
+                },
+                {
+                    "choice": "SkyBlue",
+                    "description": "SkyBlue"
+                },
+                {
+                    "choice": "SlateBlue",
+                    "description": "SlateBlue"
+                },
+                {
+                    "choice": "SteelBlue",
+                    "description": "SteelBlue"
+                },
+                {
+                    "choice": "Tan",
+                    "description": "Tan"
+                },
+                {
+                    "choice": "Tomato",
+                    "description": "Tomato"
+                },
+                {
+                    "choice": "Turquoise",
+                    "description": "Turquoise"
+                },
+                {
+                    "choice": "YellowGreen",
+                    "description": "YellowGreen"
+                },
+                {
+                    "choice": "Yellow",
+                    "description": "Yellow"
+                }
+            ]
+        },
+        "SecondaryColor": {
+            "type": "parameter",
+            "replaces":"TemplateSecondary",
+            "datatype": "choice",
+            "defaultValue": "AquaMarine",
+            "choices": [
+                {
+                    "choice": "Blue",
+                    "description": "Blue"
+                },
+                {
+                    "choice": "BlueViolet",
+                    "description": "BlueViolet"
+                },
+                {
+                    "choice": "CadetBlue",
+                    "description": "CadetBlue"
+                },
+                {
+                    "choice": "Crimson",
+                    "description": "Crimson"
+                },
+                {
+                    "choice": "Cyan",
+                    "description": "Cyan"
+                },
+                {
+                    "choice": "DarkBlue",
+                    "description": "DarkBlue"
+                },
+                {
+                    "choice": "DarkMagenta",
+                    "description": "DarkMagenta"
+                },
+                {
+                    "choice": "DarkOrange",
+                    "description": "DarkOrange"
+                },
+                {
+                    "choice": "DarkOrchid",
+                    "description": "DarkOrchid"
+                },
+                {
+                    "choice": "DarkRed",
+                    "description": "DarkRed"
+                },
+                {
+                    "choice": "DarkTurquoise",
+                    "description": "DarkTurquoise"
+                },
+                {
+                    "choice": "DarkViolet",
+                    "description": "DarkViolet"
+                },
+                {
+                    "choice": "DeepPink",
+                    "description": "DeepPink"
+                },
+                {
+                    "choice": "ForestGreen",
+                    "description": "ForestGreen"
+                },
+                {
+                    "choice": "Fuchsia",
+                    "description": "Fuchsia"
+                },
+                {
+                    "choice": "Goldenrod",
+                    "description": "Goldenrod"
+                },
+                {
+                    "choice": "Green",
+                    "description": "Green"
+                },
+                {
+                    "choice": "HotPink",
+                    "description": "HotPink"
+                },
+                {
+                    "choice": "Indigo",
+                    "description": "Indigo"
+                },
+                {
+                    "choice": "LimeGreen",
+                    "description": "LimeGreen"
+                },
+                {
+                    "choice": "Maroon",
+                    "description": "Maroon"
+                },
+                {
+                    "choice": "MediumAquaMarine",
+                    "description": "MediumAquaMarine"
+                },
+                {
+                    "choice": "MediumBlue",
+                    "description": "MediumBlue"
+                },
+                {
+                    "choice": "MediumOrchid",
+                    "description": "MediumOrchid"
+                },
+                {
+                    "choice": "MediumSeaGreen",
+                    "description": "MediumSeaGreen"
+                },
+                {
+                    "choice": "MediumVioletRed",
+                    "description": "MediumVioletRed"
+                },
+                {
+                    "choice": "MidnightBlue",
+                    "description": "MidnightBlue"
+                },
+                {
+                    "choice": "Navy",
+                    "description": "Navy"
+                },
+                {
+                    "choice": "Olive",
+                    "description": "Olive"
+                },
+                {
+                    "choice": "Orange",
+                    "description": "Orange"
+                },
+                {
+                    "choice": "OrangeRed",
+                    "description": "OrangeRed"
+                },
+                {
+                    "choice": "Purple",
+                    "description": "Purple"
+                },
+                {
+                    "choice": "Red",
+                    "description": "Red"
+                },
+                {
+                    "choice": "RosyBrown",
+                    "description": "RosyBrown"
+                },
+                {
+                    "choice": "RoyalBlue",
+                    "description": "RoyalBlue"
+                },
+                {
+                    "choice": "SeaGreen",
+                    "description": "SeaGreen"
+                },
+                {
+                    "choice": "Silver",
+                    "description": "Silver"
+                },
+                {
+                    "choice": "SkyBlue",
+                    "description": "SkyBlue"
+                },
+                {
+                    "choice": "SlateBlue",
+                    "description": "SlateBlue"
+                },
+                {
+                    "choice": "SteelBlue",
+                    "description": "SteelBlue"
+                },
+                {
+                    "choice": "Tan",
+                    "description": "Tan"
+                },
+                {
+                    "choice": "Tomato",
+                    "description": "Tomato"
+                },
+                {
+                    "choice": "Turquoise",
+                    "description": "Turquoise"
+                },
+                {
+                    "choice": "YellowGreen",
+                    "description": "YellowGreen"
+                },
+                {
+                    "choice": "Yellow",
+                    "description": "Yellow"
+                }
+            ]
+        },
+        "TextPrimaryColor": {
+            "type": "parameter",
+            "replaces":"TemplatePrimaryTxt",
+            "datatype": "choice",
+            "defaultValue": "Black",
+            "choices": [
+                {
+                    "choice": "black",
+                    "description": "black"
+                },
+                {
+                    "choice": "DarkGray",
+                    "description": "DarkGray"
+                },
+                {
+                    "choice": "Gray",
+                    "description": "Gray"
+                },
+                {
+                    "choice": "LightGray",
+                    "description": "LightGray"
+                },
+                {
+                    "choice": "White",
+                    "description": "White"
+                }
+            ]
+        },
+        "TextSecondaryColor": {
+            "type": "parameter",
+            "replaces":"TemplateSecondaryTxt",
+            "datatype": "choice",
+            "defaultValue": "DimGray",
+            "choices": [
+                {
+                    "choice": "DimGray",
+                    "description": "DimGray"
+                },
+                {
+                    "choice": "Gray",
+                    "description": "Gray"
+                },
+                {
+                    "choice": "LightGray",
+                    "description": "LightGray"
+                },
+                {
+                    "choice": "Silver",
+                    "description": "Silver"
+                }
+            ]
+        }
+    }
+}

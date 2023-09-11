@@ -1,0 +1,155 @@
+{{
+    import "./Xavier.js";
+}}
+<div id="${this.appid}">
+
+</div>
+
+
+{{ //JavaScript Here
+
+var page = {
+    "div": {
+      "class": "flex justify-items-center max-w-5xl items-center flex-wrap",
+      "children": [
+        {
+           "login": {}
+        },
+        {
+          "div": {
+            "class": "flex flex-row",
+            "children": [
+              {
+                "xcard": {
+                  "id": "getstarted",
+                  "height": "40vh",
+                  "href": "get_started",
+                  "img": "./images/1280px-stripe_logo.png",
+                  "title": "get started",
+                  "titlestyle": "color:#89f;font-size:1em;",
+                  "description": "learn how to use xavier!",
+                  "textstyle": "margin:10 auto; font-size:.7em; display:flex; flex-direction:row; justify-content:center",
+                  "color1": "#44a",
+                  "color2": "#88a",
+                  "color3": "#33a",
+                  "bg": "white",
+                  "fg": "black"
+                }
+              },
+              {
+                "xcard": {
+                  "id": "docs",
+                  "href": "documentation",
+                  "img": "./images/infinityflag.png",
+                  "height": "50vh",
+                  "class": "text-brandgray-700",
+                  "title": "documentation",
+                  "description": "learn how to use xavier!",
+                  "color1": "#447",
+                  "color2": "#f34",
+                  "color3": "#433",
+                  "bg": "white"
+                }
+              },
+              {
+                "xcard": {
+                  "id": "why",
+                  "href": "Ssr",
+                  "class": "text-brandgray-700",
+                  "height": "40vh",
+                  "img":"./images/AILOGO.svg",
+                  "title": "SSR",
+                  "description": "the SSR deep dive",
+                  "color1": "#43f",
+                  "color2": "#f3f",
+                  "color3": "#4ff",
+                  "bg": "white"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+;
+
+// Fetch the file.
+function superget(request){fetch(request)
+  .then(response => {
+    // Return the response as a JSON value.
+    return response;
+  })
+  .then(data => {
+        page = data.div;
+    });
+}
+//page = get(request);
+    var builder = window['${this.Xid}1'];
+//    var pushState = window.history.pushState;
+
+
+//     builder.renderXidElements(document.getElementById('XavierContent'));
+
+     function jsonToHTML(json){
+  // Create variable to store resulting HTML
+  let html = '';
+
+  // Create a loop to iterate over JSON object
+  for (let element in json) {
+    //If the element in the JSON object is an array, add the element to HTML
+    if (Array.isArray(json[element])) {
+      html += `<`+element.toLowerCase()+`>`;
+      // For each element in the array
+      for(let child of json[element]) {
+        // Recursively call jsonToHTML
+        html += jsonToHTML(child);
+      }
+      // Close the element when all children have been added to HTML
+      html += `</`+element.toLowerCase()+`>`;
+    }
+    // If the element in the JSON object is an object
+    else if (typeof json[element] === 'object') {
+      // Add the element to HTML
+      html += `<`+element.toLowerCase()+` `;
+      // For each attribute in the element object
+      for(let attribute in json[element]) {
+        // Add the attribute to HTML
+        html += attribute.toLowerCase()+ ` = "`+json[element][attribute]+`"`;
+      }
+      // Close the element tag
+      html += '>';
+      // If the element has children
+      if (json[element]['children']) {
+        // For each child in the element
+        for(let child of json[element]['children']) {
+          // Recursively call jsonToHTML
+          html += jsonToHTML(child);
+        }
+      }
+      // Close the element when all children have been added to HTML
+      html += `</`+element.toLowerCase()+`>`;
+    }
+    // If the elements in the JSON object are strings
+    else if (typeof json[element] === 'string') {
+      // Add the element to HTML
+      html += `<`+element.toLowerCase()+`>`+json[element]+`</`+element.toLowerCase()+`>`;
+    }
+  }
+  // Return result HTML
+  return html;
+};
+    var ele = document.getElementById("${this.appid}");
+    var newele = document.createElement('div');
+    var ev = new Event("DOMContentLoaded");
+        try{
+            newele.innerHTML = jsonToHTML(page);
+            ele.appendChild(newele);
+             window.addEventListener("DOMContentLoaded", ()=>{window['${this.Xid}1'].renderXidElements(newele)});
+             window.dispatchEvent(ev);
+
+        }
+        catch(ex){console.log(ex)}
+
+}}
+

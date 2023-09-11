@@ -1,0 +1,469 @@
+.carousel {
+  position: relative;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+  margin-top: 26px;
+}
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  counter-reset: section;
+}
+.carousel-open:checked + .carousel-item {
+  position: static;
+  opacity: 100;
+}
+.carousel-item {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+  counter-increment: section;
+}
+.carousel-item img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+.carousel-control {
+  background: rgba(0, 0, 0, 0.28);
+  border-radius: 50%;
+  color: #fff;
+  display: none;
+  font-size: 40px;
+  height: 40px;
+  line-height: 35px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  cursor: pointer;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  text-align: center;
+  width: 40px;
+  z-index: 10;
+}
+.carousel-control.prev {
+  left: 2%;
+}
+.carousel-control.next {
+  right: 2%;
+}
+.carousel-control:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: #aaaaaa;
+}
+#carousel-1 ~ .control-1 {
+  display: block;
+}
+#carousel-2 ~ .control-2 {
+  display: block;
+}
+#carousel-3 ~ .control-3 {
+  display: block;
+}
+#carousel-4 ~ .control-4 {
+  display: block;
+}
+#carousel-5 ~ .control-5 {
+  display: block;
+}
+#carousel-6 ~ .control-6 {
+  display: block;
+}
+#carousel-7 ~ .control-7 {
+  display: block;
+}
+#carousel-8 ~ .control-8 {
+  display: block;
+}
+#carousel-9 ~ .control-9 {
+  display: block;
+}
+#carousel-10 ~ .control-10 {
+  display: block;
+}
+#carousel-11 ~ .control-11 {
+  display: block;
+}
+#carousel-12 ~ .control-12 {
+  display: block;
+}
+#carousel-13 ~ .control-13 {
+  display: block;
+}
+#carousel-14 ~ .control-14 {
+  display: block;
+}
+#carousel-15 ~ .control-15 {
+  display: block;
+}
+#carousel-16 ~ .control-16 {
+  display: block;
+}
+#carousel-17 ~ .control-17 {
+  display: block;
+}
+#carousel-18 ~ .control-18 {
+  display: block;
+}
+#carousel-19 ~ .control-19 {
+  display: block;
+}
+#carousel-20 ~ .control-20 {
+  display: block;
+}
+#carousel-21 ~ .control-21 {
+  display: block;
+}
+#carousel-22 ~ .control-22 {
+  display: block;
+}
+#carousel-23 ~ .control-23 {
+  display: block;
+}
+#carousel-24 ~ .control-24 {
+  display: block;
+}
+#carousel-25 ~ .control-25 {
+  display: block;
+}
+#carousel-counter(section) ~ .control- + counter(section) {
+  display: block;
+}
+.carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+.carousel-indicators li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.carousel-bullet {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 35px;
+}
+.carousel-bullet:hover {
+  color: #aaaaaa;
+}
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-5:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-6:checked ~ .control-6 ~ .carousel-indicators li:nth-child(6) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-7:checked ~ .control-7 ~ .carousel-indicators li:nth-child(7) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-8:checked ~ .control-8 ~ .carousel-indicators li:nth-child(8) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-9:checked ~ .control-9 ~ .carousel-indicators li:nth-child(9) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-10:checked ~ .control-10 ~ .carousel-indicators li:nth-child(10) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-11:checked ~ .control-11 ~ .carousel-indicators li:nth-child(11) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-12:checked ~ .control-12 ~ .carousel-indicators li:nth-child(12) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-13:checked ~ .control-13 ~ .carousel-indicators li:nth-child(13) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-14:checked ~ .control-14 ~ .carousel-indicators li:nth-child(14) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-15:checked ~ .control-15 ~ .carousel-indicators li:nth-child(15) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-16:checked ~ .control-16 ~ .carousel-indicators li:nth-child(16) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-17:checked ~ .control-17 ~ .carousel-indicators li:nth-child(17) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-18:checked ~ .control-18 ~ .carousel-indicators li:nth-child(18) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-19:checked ~ .control-19 ~ .carousel-indicators li:nth-child(19) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-20:checked ~ .control-20 ~ .carousel-indicators li:nth-child(20) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-21:checked ~ .control-21 ~ .carousel-indicators li:nth-child(21) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-22:checked ~ .control-22 ~ .carousel-indicators li:nth-child(22) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-23:checked ~ .control-23 ~ .carousel-indicators li:nth-child(23) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-24:checked ~ .control-24 ~ .carousel-indicators li:nth-child(24) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-25:checked ~ .control-25 ~ .carousel-indicators li:nth-child(25) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-26:checked ~ .control-26 ~ .carousel-indicators li:nth-child(26) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-27:checked ~ .control-27 ~ .carousel-indicators li:nth-child(27) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-28:checked ~ .control-28 ~ .carousel-indicators li:nth-child(28) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-29:checked ~ .control-29 ~ .carousel-indicators li:nth-child(29) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-30:checked ~ .control-30 ~ .carousel-indicators li:nth-child(30) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-31:checked ~ .control-31 ~ .carousel-indicators li:nth-child(31) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-32:checked ~ .control-32 ~ .carousel-indicators li:nth-child(32) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-33:checked ~ .control-33 ~ .carousel-indicators li:nth-child(33) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-34:checked ~ .control-34 ~ .carousel-indicators li:nth-child(34) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-35:checked ~ .control-35 ~ .carousel-indicators li:nth-child(35) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-36:checked ~ .control-36 ~ .carousel-indicators li:nth-child(36) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-37:checked ~ .control-37 ~ .carousel-indicators li:nth-child(37) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-38:checked ~ .control-38 ~ .carousel-indicators li:nth-child(38) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-39:checked ~ .control-39 ~ .carousel-indicators li:nth-child(39) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-40:checked ~ .control-40 ~ .carousel-indicators li:nth-child(40) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-41:checked ~ .control-41 ~ .carousel-indicators li:nth-child(41) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-42:checked ~ .control-42 ~ .carousel-indicators li:nth-child(42) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-43:checked ~ .control-43 ~ .carousel-indicators li:nth-child(43) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-44:checked ~ .control-44 ~ .carousel-indicators li:nth-child(44) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-45:checked ~ .control-45 ~ .carousel-indicators li:nth-child(45) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-46:checked ~ .control-46 ~ .carousel-indicators li:nth-child(46) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-47:checked ~ .control-47 ~ .carousel-indicators li:nth-child(47) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-48:checked ~ .control-48 ~ .carousel-indicators li:nth-child(48) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-49:checked ~ .control-49 ~ .carousel-indicators li:nth-child(49) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-50:checked ~ .control-50 ~ .carousel-indicators li:nth-child(50) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-51:checked ~ .control-51 ~ .carousel-indicators li:nth-child(51) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-52:checked ~ .control-52 ~ .carousel-indicators li:nth-child(52) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-53:checked ~ .control-53 ~ .carousel-indicators li:nth-child(53) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-54:checked ~ .control-54 ~ .carousel-indicators li:nth-child(54) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-55:checked ~ .control-55 ~ .carousel-indicators li:nth-child(55) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-56:checked ~ .control-56 ~ .carousel-indicators li:nth-child(56) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-57:checked ~ .control-57 ~ .carousel-indicators li:nth-child(57) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-58:checked ~ .control-58 ~ .carousel-indicators li:nth-child(58) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-59:checked ~ .control-59 ~ .carousel-indicators li:nth-child(59) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-60:checked ~ .control-60 ~ .carousel-indicators li:nth-child(60) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-61:checked ~ .control-61 ~ .carousel-indicators li:nth-child(61) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-62:checked ~ .control-62 ~ .carousel-indicators li:nth-child(62) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-63:checked ~ .control-63 ~ .carousel-indicators li:nth-child(63) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-64:checked ~ .control-64 ~ .carousel-indicators li:nth-child(64) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-65:checked ~ .control-65 ~ .carousel-indicators li:nth-child(65) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-66:checked ~ .control-66 ~ .carousel-indicators li:nth-child(66) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-67:checked ~ .control-67 ~ .carousel-indicators li:nth-child(67) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-68:checked ~ .control-68 ~ .carousel-indicators li:nth-child(68) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-69:checked ~ .control-69 ~ .carousel-indicators li:nth-child(69) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-70:checked ~ .control-70 ~ .carousel-indicators li:nth-child(70) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-71:checked ~ .control-71 ~ .carousel-indicators li:nth-child(71) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-72:checked ~ .control-72 ~ .carousel-indicators li:nth-child(72) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-73:checked ~ .control-73 ~ .carousel-indicators li:nth-child(73) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-74:checked ~ .control-74 ~ .carousel-indicators li:nth-child(74) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-75:checked ~ .control-75 ~ .carousel-indicators li:nth-child(75) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-76:checked ~ .control-76 ~ .carousel-indicators li:nth-child(76) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-77:checked ~ .control-77 ~ .carousel-indicators li:nth-child(77) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-78:checked ~ .control-78 ~ .carousel-indicators li:nth-child(78) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-79:checked ~ .control-79 ~ .carousel-indicators li:nth-child(79) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-80:checked ~ .control-80 ~ .carousel-indicators li:nth-child(80) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-81:checked ~ .control-81 ~ .carousel-indicators li:nth-child(81) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-82:checked ~ .control-82 ~ .carousel-indicators li:nth-child(82) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-83:checked ~ .control-83 ~ .carousel-indicators li:nth-child(83) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-84:checked ~ .control-84 ~ .carousel-indicators li:nth-child(84) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-85:checked ~ .control-85 ~ .carousel-indicators li:nth-child(85) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-86:checked ~ .control-86 ~ .carousel-indicators li:nth-child(86) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-87:checked ~ .control-87 ~ .carousel-indicators li:nth-child(87) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-88:checked ~ .control-88 ~ .carousel-indicators li:nth-child(88) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-89:checked ~ .control-89 ~ .carousel-indicators li:nth-child(89) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-90:checked ~ .control-90 ~ .carousel-indicators li:nth-child(90) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-91:checked ~ .control-91 ~ .carousel-indicators li:nth-child(91) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-92:checked ~ .control-92 ~ .carousel-indicators li:nth-child(92) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-93:checked ~ .control-93 ~ .carousel-indicators li:nth-child(93) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-94:checked ~ .control-94 ~ .carousel-indicators li:nth-child(94) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-95:checked ~ .control-95 ~ .carousel-indicators li:nth-child(95) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-96:checked ~ .control-96 ~ .carousel-indicators li:nth-child(96) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-97:checked ~ .control-97 ~ .carousel-indicators li:nth-child(97) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-98:checked ~ .control-98 ~ .carousel-indicators li:nth-child(98) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-99:checked ~ .control-99 ~ .carousel-indicators li:nth-child(99) .carousel-bullet {
+  color: #428bca;
+}
+#carousel-100:checked ~ .control-100 ~ .carousel-indicators li:nth-child(100) .carousel-bullet {
+  color: #428bca;
+}
+#title {
+  width: 100%;
+  position: absolute;
+  padding: 0px;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 27px;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  z-index: 9999;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}

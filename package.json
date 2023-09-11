@@ -1,0 +1,31 @@
+{
+  "name": "xavier",
+  "version": "1.0.0",
+  "description": "lxNewsxl build controls for styles.js and distribution.",
+  "main": "daemon.js",
+  "scripts": {
+    "css:build": "npx tailwindcss -i ./Live/css/input.css -o ./Live/css/dist/Site.css ",
+    "css:build:watch": "npx tailwindcss -i ./Live/css/input.css -o ./Live/css/dist/Site.css --watch",
+    "js:build:client": "esbuild JSEngine/scupper.js --bundle --outfile=Live/js/dist/daemon.js",
+    "test": "test"
+  },
+  "author": "Matthew Teague",
+  "publisher": "Devmachinist",
+  "license": "MIT",
+  "dependencies": {
+    "codeflask": "^1.4.1",
+    "esbuild": "0.17.15"
+  },
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/forms": "^0.5.0",
+    "@tailwindcss/line-clamp": "^0.3.1",
+    "@tailwindcss/typography": "^0.5.2",
+    "autoprefixer": "^10.3.6",
+    "postcss": "^8.3.8",
+    "tailwindcss": "^3.2.4",
+    "tailwindcss-elevation": "^1.0.1",
+    "tailwindcss-gradients": "^3.0.0",
+    "tailwindcss-scroll-snap": "^1.1.0"
+  }
+}

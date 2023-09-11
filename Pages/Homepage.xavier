@@ -1,0 +1,60 @@
+﻿
+<div class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white font-sans">
+    <style>
+        /* Custom styles for this page */
+        .xavier-logo {
+            width: 150px;
+            height: 150px;
+        }
+
+        .highlight {
+            background-color: #ffed4a;
+            padding: 2px 4px;
+            border-radius: 2px;
+        }
+    </style>
+    <section class="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-32">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h2 class="text-3xl font-extrabold mb-4">The Xavier Framework</h2>
+              <h3>by DEVMACHINIST</h3>
+              <br/>
+                <p class="text-2xl mb-8">Where code versatility lives.</p>
+              <br/>
+                <a href="#get-started" class="bg-white hover:bg-blue-400 text-blue-800 hover:text-blue-200 mt-10 font-bold py-2 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105">Get Started</a>
+            </div>
+            <div class="md:w-1/2 mt-8 md:mt-0">
+                <img src="images/logo.png" alt="Xavier Framework" class="rounded-lg shadow-2xl">
+            </div>
+        </div>
+    </section>
+    <main class="container mx-auto py-8 px-4">
+        <section class="bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-4">Why Choose the Xavier Framework?</h2>
+            <p class="text-lg text-gray-700">Tired of the web development language divide? Xavier Framework bridges the gap by allowing you to combine the power of <span class="highlight">C#</span>, <span class="highlight">Python</span>, and <span class="highlight">JavaScript</span> seamlessly in a single web application. Say goodbye to language constraints and embrace the future of web development.</p>
+        </section>
+
+        <section class="bg-blue-500 text-white p-8 mt-8 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-semibold mb-4">Key Features</h2>
+            <ul class="list-disc list-inside text-lg">
+                <li class="mb-2">🚀 **Versatile Language Support**: Xavier Framework supports C#, Python, and JavaScript, giving you the freedom to choose the right tool for the job.</li>
+                <li class="mb-2">🔌 **Static Component Library**: Create reusable components that work seamlessly with React, Blazor, or as standalone elements.</li>
+                <li class="mb-2">🌐 **Server-Side Rendering (SSR)**: Enhance performance and SEO with built-in SSR support for faster loading and better search engine visibility.</li>
+                <li class="mb-2">🌟 **API Creation Helpers**: Simplify the creation of robust APIs for your web applications.</li>
+                <li class="mb-2">🏷️ **Tag Helpers for Blazor**: Enjoy uninterrupted rendering in Blazor with Xavier's tag helpers.</li>
+            </ul>
+        </section>
+
+        <section id="get-started" class="bg-white p-8 mt-24 rounded-lg shadow-lg">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-4">Getting Started with Xavier Framework</h2>
+            <p class="text-lg text-gray-700">To harness the full potential of Xavier Framework, use these syntax markers:</p>
+            <ul class="list-disc list-inside text-lg text-gray-600">
+                <li class="mb-2">🖋️ **C#**: Wrap your C# code with <code class="bg-gray-200 p-1 rounded">x&#123; ... &#125;x</code> within your HTML.</li>
+                <li class="mb-2">🎯 **JavaScript**: Enclose JavaScript code with double curly braces <code class="bg-gray-200 p-1 rounded">&#123;&#123; ... &#125;&#125;</code> in your HTML documents.</li>
+                <li class="mb-2">🐍 **Python**: For Python integration, utilize <code class="bg-gray-200 p-1 rounded">py&#123; ... &#125;py</code> markers to embed Python code into your HTML.</li>
+            </ul>
+        </section>
+    </main>
+</div>
+
+

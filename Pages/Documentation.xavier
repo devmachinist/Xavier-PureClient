@@ -1,0 +1,232 @@
+@page
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xavier Framework Documentation</title>
+  <link rel="stylesheet" href="/css/dist/Site.css" />
+  <link rel="stylesheet" href="/css/fontello/fontello-330f88e4/css/fontello.css">
+  <link rel="stylesheet" href="/css/site.css">
+
+  <style>
+    /* Custom styles for the documentation page */
+section{
+  padding-top:6rem;
+
+}
+    .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+ul,
+ol {
+  margin-bottom: 1.5rem;
+}
+code {
+  background-color: #34365F;
+  color: #CDF;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+pre code {
+  display: block;
+  overflow-x: auto;
+  padding: 1rem;
+  background-color: #34365F;
+  border-radius: 0.5rem;
+  line-height: 1.5;
+}
+
+.highlight {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.section-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.section-content {
+  margin-bottom: 2rem;
+}
+
+.code-snippet {
+  margin-bottom: 1.5rem;
+}
+
+.api-method {
+  margin-bottom: 2rem;
+}
+
+.api-method-name {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.api-method-description {
+  font-size: 1.125rem;
+  margin-bottom: 1.25rem;
+}
+
+.api-method-example {
+  font-size: 1.125rem;
+  background-color: #f2f2f2;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+</style>
+</head>
+
+<body>
+    <xnav id="MainNav"
+          logo="./favicon-96x96.png"
+          home="/"
+          logoshade="0px 0px 12px #00F"
+          name="avier" titlestyle="font-family:cursive; font:1.8em #00F"
+          fg="black" bg="white"
+          menubg="#FFF"
+          class="top-0 w-screen fixed left-0 flex mx-0 z-[3001]"></xnav>
+
+<div class="flex min-h-full mt-24 flex-col">
+  <div class="mx-auto flex w-full max-w-7xl items-start gap-x-8 px-4 py-10 sm:px-6 lg:px-8">
+    <aside class="sticky top-24 hidden w-44 shrink-0 lg:block">
+      <!-- Left column area -->
+      <nav class="flex flex-1 flex-col" aria-label="Sidebar">
+  <ul role="list" class="-mx-2 space-y-1">
+    <li>
+      <!-- Current: "bg-gray-50 text-indigo-600", Default: "text-gray-700 hover:text-indigo-600 hover:bg-gray-50" -->
+      <a href="#getting-started" class="bg-gray-50 text-indigo-600 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+        <svg class="h-6 w-6 shrink-0 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+        </svg>
+        Getting Started
+      </a>
+    </li>
+    <li>
+      <a href="#Memory" class="text-gray-700 hover:text-indigo-600 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+        <svg class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z" />
+        </svg>
+        Xavier.Memory
+      </a>
+    </li>
+    <li>
+      <a href="#AOT" class="text-gray-700 hover:text-indigo-600 hover:bg-gray-50 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold">
+        <svg class="h-6 w-6 shrink-0 text-gray-400 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+        </svg>
+        AOT
+      </a>
+    </li>
+  </ul>
+</nav>
+
+    </aside>
+
+    <main class="flex-1">
+      <!-- Main area -->
+<section id="getting-started">
+      <h2 class="section-title">Getting Started</h2>
+      <p class="section-content">Follow these steps to get started with the Xavier Framework:</p>
+      <ol class="list-decimal space-y-2 list-inside section-content">
+        <li><strong>Installation:</strong> Install the Xavier Framework package from NuGet or add it to your project manually.</li>
+        <li><strong>Setup:</strong> Configure the Xavier Framework in your project by adding the <code>&lt;script src="Xavier.js" type="module" async=""&gt;
+    &lt;/script&gt;</code> to the index.html at the end of the body.</li>
+        <li><strong>Component Creation:</strong> Create Xavier components by extending the base XavierComponent class and adding the required logic and markup.</li>
+        <li><strong>Enable SSR:</strong> Add the <code>&#64;page</code> directive to the first line of your Xavier component to enable server-side rendering.</li>
+        <li><strong>Static Fallback:</strong> Set the static fallback using the <code>Xavier.Memory.StaticFallback</code> property to specify the fallback HTML file.</li>
+        <li><strong>Include Ssr Component:</strong> Register the <code>CustomNode</code> component in the dependency injection container using <code>builder.Services.AddScoped&lt;CustomNode&gt;()</code>.</li>
+        <li><strong>Map XavierNodes:</strong> Use the <code>app.MapXavierNodes({controller}/{action=index}/{id}</code> method to map your SSR XavierNodes to their respective controllers.</li>
+        <li><strong>REST API Interoperability:</strong> Utilize the <code>EngineController</code> to expose public methods of your Xavier component as API endpoints.</li>
+        <li><strong>Customization and Debugging:</strong> Use the browser's developer tools to inspect and customize the included script for your Xavier SSR page.</li>
+      </ol>
+      <p class="section-content">By following these steps, you'll be able to leverage the power of the Xavier Framework and build performant and futuristic web applications with ease.</p>
+    </section>
+   <section id="Memory">
+  <h2 class="section-title">Xavier.Memory</h2>
+  <p class="section-content">The <code>Xavier.Memory</code> namespace is the core pipe for the Xavier Framework:</p>
+  
+  <h3 class="section-subtitle">Initialization</h3>
+  <p class="section-content">With <code>Xavier.Memory</code>, you'll need to initialize your Xavier app in your program.cs file for production like so...
+  <code class="whitespace-pre">await memory.Init(root, destination, assembly)
+</code></p>
+  
+  <p class="section-content">By utilizing the features provided by <code>Xavier.Memory</code>, you can optimize memory usage, improve application performance, and enhance user experience in your Xavier-based applications.</p>
+</section>
+<section id="AOT">
+  <h2 class="section-title">Devmachinist.Xavier.AOT</h2>
+  <p class="section-content">The <code>Devmachinist.Xavier.AOT</code> package in the Xavier Framework enables Ahead-of-Time (AOT) compilation during development. AOT compilation can provide performance benefits by pre-compiling your Xavier components and optimizing them for faster execution. Here's what you need to know about <code>Devmachinist.Xavier.AOT</code>:</p>
+  
+  <h3 class="section-subtitle">Installation</h3>
+  <p class="section-content">To use AOT compilation in your Xavier project, you need to install the <code>Devmachinist.Xavier.AOT</code> package. You can install it via NuGet or by adding it manually to your project references.</p>
+  
+  <h3 class="section-subtitle">AOT Compilation Process</h3>
+  <p class="section-content">During development, when you build your Xavier project, the <code>Devmachinist.Xavier.AOT</code> replaces the <code>Xavier.Memory</code> initialization. It analyzes the specified Xavier components and generates optimized code ahead of time, reducing the overhead of runtime compilation.</p>
+  
+  <h3 class="section-subtitle">Benefits of AOT Compilation</h3>
+  <p class="section-content">AOT compilation can offer several advantages and disadvantages for your Xavier application during development:</p>
+  <ul class="list-disc list-inside section-content">
+    <li><strong><span class="text-3xl text-green-300">+  </span>Improved Performance:</strong> AOT-compiled components are optimized for faster execution, leading to improved performance and reduced startup times.</li>
+    <li><strong><span class="text-3xl text-red-400">-  </span>Excess Memory Usage:</strong> AOT-compiled components consume more memory compared to their runtime-compiled counterparts.</li>
+    <li><strong><span class="text-3xl text-green-300">+  </span>Early Detection of Issues:</strong> AOT compilation can uncover potential issues and errors in your Xavier components at build time, allowing for quicker resolution.</li>
+  </ul>
+  
+  <p class="section-content">By utilizing 
+  <code class="whitespace-pre">await aot.Init(
+    memory, root, destination, null, typeof(Program).Assembly
+);
+</code>, you can take advantage of AOT compilation during development to optimize the performance and efficiency of your Xavier application.</p>
+</section>
+    </main>
+
+    <aside class="sticky top-8 hidden w-96 shrink-0 xl:block">
+      <!-- Right column area -->
+
+    </aside>
+  </div>
+</div>
+
+
+    {{
+    var hw = Documentation.HelloWorld().then(r => {return r});
+    console.log(hw);
+    window.hw = hw;
+    }}
+
+    <script src="Xavier.js" type="module" async="" >
+    </script >
+  </body>
+</html>

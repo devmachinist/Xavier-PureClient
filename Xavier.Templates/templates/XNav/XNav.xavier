@@ -1,0 +1,260 @@
+x{
+//This component has the following parameters:
+//    id = Unique identification for multiple use cases defaults to undefined
+//    logo = source of the img that will be displayed
+//    home = a link to the index or home page, or wherever you want to take your visitor
+//    bg = Background Color
+//    fg = Foreground Color (text)
+//
+//
+//
+}x
+    {{
+
+    }}
+<style>
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* =====================
+    Base styles
+====================== */
+.main-header {
+    width: 100%;
+    background: ${this.bg};
+		box-shadow: 0px 1px 2px 0px rgba(0,0,0,.4);
+}
+.menu-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+}
+.logo{
+    box-shadow: ${this.logoshade}
+}
+.logo-wrap {
+    width: 50px;
+    min-height: 40px;
+}
+.logo-wrap img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+}
+
+/* =====================
+    Mobile ${this.id}-nav closed
+====================== */
+.main-${this.id}-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0vh;
+    
+    transition: height .0s ease-out .4s, opacity .2s ease-out .2s, padding-left .2s ease-in 0s;
+    opacity: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 400;
+
+    overflow: hidden;
+    background: ${this.menubg};
+    padding-left: 100%;
+}
+.${this.id}-nav-item {
+    display: block;
+    padding: 7px 10px;
+    margin: 5px auto;
+    color: ${this.fg};
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+}
+.${this.id}-nav-item:first-of-type {
+    margin-top: 20vh;
+}
+
+/* Hamburger btn */
+.drop-trigger {
+    /* Changing these will automatically adjust bars */
+    height: 34px;
+    width: 50px;
+    color: ${this.fg};
+    /* For btn bars */
+    position: relative;
+    background: rgba(0,0,0,0);
+    transition: all .1s ease-out 0s;
+    z-index: 450;
+    border-width: 0;
+    margin-left: auto;
+}
+/* Hamburger bars */
+.drop-trigger .btn-bar {
+    position: absolute;
+    display: block;
+    top: 20%;
+    left: 50%;
+    height: 4px;
+    width: 60%;
+    transition: all .4s ease-in 0s;
+    background: ${this.fg};
+    margin: 0 auto;
+    transform-origin: 50% 50%;
+    transform: translateX(-50%) translateY(-0%) rotate(-0deg);
+}
+.btn-bar.middle {
+    top: 51%;
+    transform: translateX(-50%)  translateY(-50%) rotate(0deg);
+}
+.btn-bar.bottom {
+    top: calc(80% - 3px);
+}
+/* Fills background of ${this.id}-nav and is linked to the checkbox toggle */
+.${this.id}-nav-revert {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0);
+    z-index: 1;
+}
+
+/* Checkbox used for toggle */
+#${this.id}-nav-tog {
+    display: none;
+}
+/* =====================
+    Mobile ${this.id}-nav open
+====================== */
+#${this.id}-nav-tog:checked ~ .drop-trigger .btn-bar {
+    transition-timing-function: ease-out;
+}
+#${this.id}-nav-tog:checked ~ .drop-trigger .btn-bar {
+    top: 50%;
+    background: ${this.fg};
+}
+#${this.id}-nav-tog:checked ~ .drop-trigger .btn-bar.top {
+    transform: translateX(-50%)  translateY(-50%) rotate(-315deg);
+}
+#${this.id}-nav-tog:checked ~ .drop-trigger .btn-bar.middle {
+    transform: translateX(-50%)  translateY(-50%) rotate(-225deg);
+}
+#${this.id}-nav-tog:checked ~ .drop-trigger .btn-bar.bottom {
+    transform: translateX(-50%) translateY(-50%) rotate(-225deg);
+}
+#${this.id}-nav-tog:checked ~ .main-${this.id}-nav {
+    transition: height .0s ease-in 0s, opacity .2s ease-in 0s, padding-left .23s ease-out .21s;
+    opacity: 1;
+    height: 100vh;
+    padding-left: 0%;
+}
+/* ============================
+    Large screen main-${this.id}-nav
+============================= */
+@media screen and (min-width: 800px){
+    /* Hides mobile-specific elements */
+    .drop-trigger,
+    .${this.id}-nav-revert {
+        display: none;
+    }
+    .main-${this.id}-nav {
+        height: auto;
+        position: relative;
+        margin:0px;
+        padding-left: 0%;
+        flex-direction: row;
+        justify-content: flex-end;
+        opacity: 1;
+        background: ${this.bg};
+    }
+    .${this.id}-nav-item:first-of-type{
+        margin-top: 0;
+    }
+    .${this.id}-nav-item {
+        font-size: 18px;
+        margin: 0 5px;
+        color: ${this.fg};
+        width: auto;
+    }
+    .${this.id}-nav-item span{
+        color:${this.menufg}
+    }
+/* =====================
+    Mobile ${this.id}-nav open
+====================== */
+#${this.id}-nav-tog:checked ~ .drop-trigger .btn-bar {
+    transition-timing-function: ease-out;
+}
+#${this.id}-nav-tog:checked ~ .drop-trigger .btn-bar {
+    top: 50%;
+    background: ${this.fg};
+}
+#${this.id}-nav-tog:checked ~ .drop-trigger .btn-bar.top {
+    transform: translateX(-50%)  translateY(-50%) rotate(-315deg);
+}
+#${this.id}-nav-tog:checked ~ .drop-trigger .btn-bar.middle {
+    transform: translateX(-50%)  translateY(-50%) rotate(-225deg);
+}
+#${this.id}-nav-tog:checked ~ .drop-trigger .btn-bar.bottom {
+    transform: translateX(-50%) translateY(-50%) rotate(-225deg);
+}
+#${this.id}-nav-tog:checked ~ .main-${this.id}-nav {
+    transition: height .0s ease-in 0s, opacity .2s ease-in 0s, padding-left .23s ease-out .21s;
+    opacity: 1;
+    height: 100vh;
+    padding-left: 0%;
+    dislay:none;
+}
+}
+
+</style>
+<header class='main-header'>
+    <div class="menu-wrap">
+        <!-- Logo container -->
+        <a href='${this.home}' class="logo-wrap" style="display:flex; flex-direction:row;">
+            <img class="logo" src="${this.logo}" alt="Logo" >
+            <text style="color:${this.fg};z-index:500; display:flex; font-size:1.5em; margin-left:3px; align-items:center; ${this.titlestyle}">${this.name}</text>
+        </a>
+        <!-- When this is checked, ${this.id}-nav menu is dropped -->
+        <input type='checkbox' id='${this.id}-nav-tog'>
+
+        <!-- Hamburger btn -->
+        <label for='${this.id}-nav-tog'  class="drop-trigger">
+            <!-- Hamburg bars -->
+            <span class="btn-bar top"></span>
+            <span class='btn-bar middle'></span>
+            <span class='btn-bar bottom'></span>
+        </label>
+
+        <!-- Menu -->
+        <nav class="main-${this.id}-nav">
+            <!-- This covers the whole background of the dropped menu -->
+            <label for='${this.id}-nav-tog' class='${this.id}-nav-revert'></label>
+            x{
+            //initialize the array
+                var id = "${this.id}";
+            //Simple Menu Item list
+                @foreach( var menuitem in Menu ){
+                    <a href='/@menuitem' class='@id-nav-item'>
+                        <span> @menuitem </span>
+                    </a>
+                }
+            }x
+        </nav>
+    </div>
+</header>

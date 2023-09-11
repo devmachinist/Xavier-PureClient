@@ -1,0 +1,132 @@
+@page
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xavier Framework's SSR Capabilities</title>
+    <link rel="stylesheet" href="/css/dist/Site.css" />
+    <link rel="stylesheet" href="/css/fontello/fontello-330f88e4/css/fontello.css">
+    <link rel="stylesheet" href="/css/site.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    /* Custom styles for a futuristic look */
+    body {
+      background-color: #121212;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    code {
+      background-color: #2d2d2d;
+      color: #f8f8f8;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.25rem;
+    }
+
+    pre code {
+      display: block;
+      overflow-x: auto;
+      padding: 1rem;
+      background-color: #2d2d2d;
+      border-radius: 0.5rem;
+      line-height: 1.5;
+    }
+
+    .highlight {
+      background-color: #212121;
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+
+    .code-snippet {
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+
+<body class="scrollbar">
+    <xnav id="MainNav"
+          logo="./favicon-96x96.png"
+          home="/"
+          name="Xavier" titlestyle="font-family:cursive; font:1.8em #FFF"
+          fg="white" bg="#445"
+          menubg="#334"
+          menufg="#FFF"
+          class="top-0 w-screen fixed left-0 flex mx-0 z-[3001]"></xnav>
+
+  <div class="container mt-24">
+    <h1>Xavier Framework's SSR Capabilities</h1>
+
+    <p>The Xavier Framework provides powerful server-side rendering (SSR) capabilities, allowing you to enhance the performance and user experience of your web applications. With SSR, the initial rendering of your pages can be done on the server, providing faster loading times and improved search engine optimization (SEO).</p>
+
+    <p>To enable SSR in Xavier, you need to add the <code>@@page</code> directive to the first line of the Xavier component. Additionally, you need to set the static fallback using the following code:</p>
+
+    <div class="code-snippet">
+      <pre><code>Xavier.Memory.StaticFallback = Environment.CurrentDirectory + "/Live/index.html";</code></pre>
+    </div>
+
+    <p>Next, include the page by adding the <code>Ssr</code> Xavier component:</p>
+
+    <div class="code-snippet">
+      <pre><code>builder.Services.AddScoped&lt;MyComponent&gt;();</code></pre>
+    </div>
+
+    <p>To map all your SSR XavierNodes to their controllers, use the following code:</p>
+
+    <div class="code-snippet">
+      <pre><code>app.MapXavierNodes("{controller=Home}/{action=Index}/{id?}", Environment.CurrentDirectory + "/Pages");</code></pre>
+    </div>
+
+    <p>To add all the functionality to the page for faux C# interoperability via a REST API, you can use the <code>EngineController</code> included in the PureClient Example found on GitHub.</p>
+
+    <p>Your controller should look like this:</p>
+
+    <div class="code-snippet">
+      <pre><code>public class SsrController : EngineController&lt;Ssr&gt;
+{
+    public Ssr Controller() 
+    {
+        // Controller initialization code here
+    }
+}</code></pre>
+    </div>
+
+    <p>This will add all public methods to the API, including getters and setters, allowing seamless integration with your Xavier SSR page.</p>
+
+    <p>Remember to open up the developer tools and inspect the script that is included on the page for further customization and debugging.</p>
+
+    <div class="highlight">
+      <p>For more details and examples, please refer to the <a href="https://github.com/example/xavier-framework">Xavier Framework documentation on GitHub</a>.</p>
+    </div>
+  </div>
+
+    {{
+    var hw = Ssr.HelloWorld().then(r => {return r});
+    console.log(hw);
+    window.hw = hw;
+    }}
+
+    <script src="Xavier.js" type="module" async="" >
+    </script >
+  </body>
+</html>

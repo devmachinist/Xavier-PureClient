@@ -1,0 +1,79 @@
+
+<div class="flex flex-col md:flex-row items-center align-self-center z-0 pt-10 w-screen">
+    <div class="flex flex-col md:w-1/2 items-center pt-4">
+        <section class="rounded-2xl z-0
+            animate-fadein flex-col elevation-2 m-5 
+            bg-white pt-5 p-10 md:p-20">
+              
+              <form id="account" class="flex flex-col items-center text-azure-50">
+                <div  class="text-redribbon-400"></div>
+                <div class="flex flex-col items-center form-group">
+                    <label class="icon-user-circle elevation-5 rounded-full m-3 text-azure-600"></label>
+                    <input autocomplete="username" class=" p-2 transitions ease-in-out bg-white text-brandgray-800 elevation-2
+                                                        focus:outline-none focus:ring-2 focus:ring-azure-300
+                          rounded-xl" />
+                </div>
+                <div class="flex flex-col items-center form-group">
+                    <label class="icon-key text-yellow-500 stroke-brandgray-700 m-3 mb-1"></label>
+                    <input type="password" name="password" autocomplete="current-password"  class=" focus:outline-none border-0 bg-white text-brandgray-800 outline-none
+                        elevation-2 focus:ring-2 
+                                rounded-xl
+                       focus:ring-azure-300" />
+                </div>
+                <div class="form-group">
+                    <div class="checkbox rounded-lg focus:outline-none border-0 
+                                 bg-gradient-br p-5">
+                        <label content="">
+                            <input type="checkbox" class="border-0 text-blue-400 elevation-2 rounded-sm
+                                             mr-5 focus:ring-2 focus:ring-azure-200"
+                                                  />
+                          <p class="text-brandgray-800">Remember me?</p> 
+                        </label>
+                    </div>
+                </div>
+SUBMIT BUTTON 
+
+                <div class="flex flex-col items-center group mt-2 mb-4 w-full">
+                    <div onclick="SignIn()" class="rounded-xl hover:animate-pulse focus:animate-pulse bg-aquamarine-400 w-full p-3">
+                   <i class="group-hover:hidden icon-lock text-brandgray-400"> </i>
+                       <i class="hidden group-hover:block hover:animate-pulse icon-lock-open
+                                                text-brandgray-400">  </i>	    
+                    </div>
+                </div>
+                <div class="form-group flex flex-col spacing-y-5 items-center">
+                    <p class="text-black-800">
+                          Don't have an account?
+                    </p>
+                    <p class="m-5">
+                        <a class="bg-azure-500 text-bonjour-100 rounded-md p-2 " 
+                               Sign Up
+                        </a>
+                    </p>
+                    <p class="hidden">
+                        <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
+                    </p>
+                    <p>
+                        <a id="forgot-password" asp-page="./ForgotPassword">Forgot your password?</a>
+                    </p>
+                </div>
+            </form>
+        </section>
+    </div>
+
+Alternate Login Services
+    <div class="flex flex-col items-center w-2/5 m-5 pt-10 bg-sky-300">
+        <section class="flex items-center flex-col">
+                        <div class="flex flex-col itmes-center">
+                            <p class="text-brandgray-800">
+                                There are no external authentication services configured. See <a href="https://go.microsoft.com/fwlink/?LinkID=532715">this article</a>
+                                for details on setting up this ASP.NET application to support logging in via external services.
+                            </p>
+                        </div>
+                        <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" 
+                                 method="post" class="form-horizontal">
+                            <div>
+                            </div>
+                        </form>
+        </section>
+    </div>
+</div>

@@ -1,0 +1,72 @@
+﻿<header class="flex w-full top-0 py-2 px-4 fixed bg-gradient-to-br
+            from-bonjour-200 to-white
+        transitions ease-in duration-200 md:flex md:items-center
+        md:justify-between pb-0 shadow-md mx-0 z-[3000]">
+    <!-- Logo text or image -->
+      <div class="flex items-center my-1 justify-between ">
+        <div class="relative rounded-lg overflow-hidden h-10 w-10 ">
+            <!-- <div class="LoadingRainbow"></div> -->
+            <img class="w-10 absolute  " src="/images/logo.png"/>
+          <a href="/" class="absolute rounded-lg overflow-hidden h-10 w-10 ">
+          </a>
+        </div>
+        <div class="relative h-12 justify-items-center">
+              <img src="/images/Name.png" class="mx-5 scale-y-90"/>
+           <a class="text-lg absolute mx-0 my-0 text-brandgray-500 h-full w-full " href="/">
+           </a>
+        </div>
+          <!--Toggle for the Navigation on mobile-->
+    </div>
+    <!-- Search field -->
+    <form id="search-form" class=" hidden flex flex-col grow p-2 items-center overflow-y-auto transitions ease-in-out scrollbar duration-400 md:flex md:mb-0 md:w-1/4 ">
+        <label class="hidden" for="search-form">Search</label>
+        <input class=" outline-none elevation-2 border-0 focus:ring-2 focus:ring-azure-300
+                     p-2 rounded-lg
+                   w-full" placeholder="Search" type="text">
+
+        <button class="hidden">Submit</button>
+        <div class=" bg-white scrollbar w-screen border-b-4 border-azure-600 shadow-md right-0 p-3 mt-24 h-144 hidden overflow-y-auto">
+
+        </div>
+    </form>
+    <div>
+        <div class="grid space-y-1 grid-col-1 animation">
+            <i class="icon-bar w-39 bg-brandgray-50 position-static mt-3
+                h-1 "></i>
+
+        </div>
+    </div>
+
+    <!-- END Search field -->
+    <!-- Global navigation -->
+    <nav id="Menu" class="transitions ease-in-out duration-400 md:flex">
+        <div  class="m-1">
+            <LoginDisplay/>
+        </div>
+    </nav>
+
+
+        <button onclick="Toggle()" class="absolute flex h-8 w-8 m-2 right-0.5 overflow-hidden border-4 border-brandgray-400 elevation-2 
+                rounded-[50%] text-indigo-500 md:hidden">
+          <div  class="flex space-y-1 items-center justify-items-center flex-col ">
+            <i class="icon-bar bg-brandgray-600 position-static right-1 top-1
+                 w-7 h-1 "></i>
+            <i class="icon-bar bg-brandgray-600 position-static right-1 top-1
+                         w-7 h-1 "></i>
+            <i class="icon-bar bg-brandgray-600 position-static right-1 top-1
+                 w-7 h-1 "></i>
+            <i class="icon-bar bg-brandgray-600 position-static right-1 top-1
+                 w-7 h-1 "></i>
+          </div>
+          <div  class="absolute ring-4 animate-fadein overflow-none ring @IsNavToggled transition-transform
+                    transform:rotate-90 rounded-[50%] bg-white overflow-hidden flex flex-col transition ease-in-out 
+                 duration-300 space-x-1 grid-col-1 transform">
+            <div class="w-20 LoadingRainbow h-20">
+
+            </div>
+          </div>
+        </button>
+        <!-- END Global navigation -->
+  
+</header>
+

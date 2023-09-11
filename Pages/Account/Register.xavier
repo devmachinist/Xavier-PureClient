@@ -1,0 +1,61 @@
+<div class="flex inline-flex items-center pt-20 mx-20 text-center sm:mx-28 md:mx-52 lg:mx-144">
+
+    <div class="text-4xl font-extrabold text-center text-azure-800">Create a new account</div>
+    </div>
+<div class="flex flex-col ">
+    <div class="flex flex-col items-end text-brandgray-800 p-20 py-10 overflow-visible ">
+        <div class="absolute w-1/4 bg-brandgray-400 opacity-10 h-96 rounded-2xl">
+        </div>
+            <div class="absolute w-1/2 bg-pictonblue-400 top-128 left-10 opacity-10 h-1/3 rounded-2xl ">
+            </div>
+        <div class="absolute w-1/4 h-full overflow-visible border-brandgray-400 super-border opacity-10 top-20 right-3 rounded-2xl">
+        </div>
+        <div class="fixed w-full bg-azure-400 top-128 opacity-10 left-20 h-144 rounded-2xl">
+
+        </div>
+        <div class="absolute w-1/2 bg-brandgray-400 top-36 right-20 opacity-10 h-1/3 rounded-2xl">
+
+        </div>
+
+        <form class="z-10 flex flex-col items-end self-stretch p-10 space-x-2 space-y-10 text-lg font-medium text-center bg-white opacity-75 md:mr-10 lg:pr-40 form-shadow-white rounded-2xl text-brandgray-700" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+            <hr/>
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="flex flex-row justify-center ">
+                <label class="content-center mx-5 my-0 font-bold" asp-for="Input.Email"></label>
+                <input asp-for="Input.Email" class="border-0 outline-none focus:outline-none elevation-4 focus:ring-2 rounded-xl focus:ring-azure-300"/>
+            </div>
+            <div class="flex flex-row ">
+                <label class="mx-5 my-0 font-bold" asp-for="Input.Password"></label>
+                <input asp-for="Input.Password" class="border-0 outline-none focus:outline-none elevation-4 focus:ring-2 rounded-xl focus:ring-azure-300"/>
+            </div>
+            <div class="flex flex-row ">
+                <label class="mx-5 font-bold " asp-for="Input.ConfirmPassword"></label>
+                <input asp-for="Input.ConfirmPassword" class="border-0 outline-none focus:outline-none elevation-4 focus:ring-2 rounded-xl focus:ring-azure-300"/>
+            </div>
+            <div class="flex flex-row ">
+                <label class="mx-5 font-bold ">Organization</label>
+                <input class="border-0 outline-none focus:outline-none elevation-4 focus:ring-2 rounded-xl focus:ring-azure-300"/>
+            </div>
+            <div class="">
+                <div class="h-5 mx-20 my-5 icon-bar rounded-2xl bg-bonjour-100"></div>
+            </div>
+
+            <button type="submit" class="p-8 rounded-lg align-center hover:ring-2 bg-aquamarine-500 focus:outline-none hover:ring-azure-300 focus:bg-aquamarine-400 hover:bg-aquamarine-400 focus:ring focus:ring-azure-300">Register</button>
+        </form>
+    </div>
+    <div class="flex flex-col">
+        <section>
+            <hr />
+<form id='external-account' asp-page='./ExternalLogin' returnUrl='${this.ReturnUrl}' method='post' class='form-horizontal'>
+                        <div>
+                            <p>
+                                @foreach (var provider in ExternalLogins)
+                                {
+                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
+                                }
+                            </p>
+                        </div>
+                    </form>
+        </section>
+    </div>
+</div>

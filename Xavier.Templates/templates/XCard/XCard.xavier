@@ -1,0 +1,132 @@
+<style>
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+:root {
+  --card-height: ${this.height};
+  --card-width: calc(var(--card-height) / 1.5);
+}
+.card${this.id} {
+  background-color: ${this.bg};
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px;
+  position: relative;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction:column;
+  font-size: 1.5em;
+  margin:1em;
+  color: rgb(${this.fg} / 50%);
+  cursor: pointer;
+  font-family: Arial;
+}
+
+.card${this.id}:hover {
+  color: rgb(88 199 250 / 100%);
+  transition: color 1s;
+}
+.card${this.id}:hover:before, .card:hover:after {
+  opacity: 0;
+}
+@keyframes FadeIn{
+  0%{
+    opacity: 0%;
+  }
+  100%{
+    opacity:100%;
+  }
+}
+.card${this.id}::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate)
+    , ${this.color1}, ${this.color2} 43%, ${this.color3});
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: ${this.id}spin 9.5s linear infinite;
+}
+
+.card${this.id}::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 10 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate)
+    , ${this.color1}, ${this.color2} 43%, ${this.color3});
+    opacity: 1;
+  transition: opacity .5s;
+  animation: ${this.id}spin 9.5s linear infinite;
+}
+.card${this.id}:hover:before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    var(--rotate)
+    , ${this.color1}, ${this.color2} 43%, ${this.color3});
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 9.5s linear infinite;
+}
+.card${this.id}:hover:after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 10 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate)
+    , ${this.color1}, ${this.color2} 43%, ${this.color3});
+    opacity: 1;
+  transition: opacity .5s;
+  animation: ${this.id}spin 9.5s linear infinite;
+}
+@keyframes ${this.id}spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+</style>
+<a href="${this.href}" class="card${this.id}" style="background:${this.bg};color:${this.fg};
+${this.style}">
+  <img src="${this.img}">
+  </img>
+  <div style="${this.titlestyle}">
+    ${this.title}
+  </div>
+  <div style="${this.textstyle}">
+    ${this.description}
+  </div>
+</a>

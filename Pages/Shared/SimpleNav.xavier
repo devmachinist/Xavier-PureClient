@@ -1,0 +1,59 @@
+<div class="flex flex-row">
+<nav id="" aria-label="Sidebar" class="fixed left-0 right-0 shadow-brandgray-400 shadow-sm items-center flex-col md:right-auto bottom-0 font-bold md:top-0 z-[2999] bg-white flex-shrink-0">
+    <div class="md:h-screen p-3 md:right-auto items-center
+                              md:w-14 w-[100%] justify-center md:justify-start
+                                flex flex-row md:flex-col md:space-y-3 ">
+        <div class="opacity z-[4000] fadein p-2 md:mt-32">
+            <div class="Main-btns flex flex-row md:flex-col items-center">
+                <div class="camera-btn m-2" id='Main-up'>
+                    <navlink href="/Posts" activeclass=" Main-btn-href" class="Main-btn Main-btn-active flex items-center">
+                        <button data-mdb-ripple="true"
+                                data-mdb-ripple-color="light" 
+                                class="flex flex-col items-center justify-items-center elevation-2 h-14 w-14 ">
+                            <div class="relative h-14  m-3   justify-items-center w-14 i POSTICON"></div>
+                        </button>
+                    </navlink>
+                </div>
+                <div class="camera-btn m-2" id='Main-up'>
+                    <navlink href="/Tv" activeclass=" Tv-btn-href" class="Tv-btn-active Main-btn flex items-center">
+                        <button data-mdb-ripple="true"
+                                data-mdb-ripple-color="light" onclick=''
+                                class=" Main-btn flex flex-col Tv-btn justify-items-center items-center elevation-2 h-14 w-14 ">
+                            <div class="relative mx-0 m-3 justify-items-center i TVICON  "></div>
+                        </button>
+                    </navlink>
+                </div>
+                <div class="camera-btn m-2" id='Cast-up'>
+                    <navlink href="/Casts" activeclass="Cast-btn-href" class="Cast-btn-active Main-btn">
+                        <button data-mdb-ripple="true"
+                                data-mdb-ripple-color="light" onclick=''
+                                class="Main-btn flex flex-col Cast-btn justify-items-center items-center elevation-2 h-14 w-14 ">
+                            <div class="relative absolute m-3 i CASTICON"></div>
+                        </button>
+                    </navlink>
+                </div>
+                <div class="camera-btn m-2" id='Cast-up'>
+                    <navlink href="/Venture" ActiveClass="Business-btn-href" class="Business-btn-active Main-btn">
+                        <button data-mdb-ripple="true"
+                                data-mdb-ripple-color="light"
+                                class=" elevation-2 flex flex-col justify-items-center items-center h-14 w-14 ">
+                            <div class="relative m-3 justify-items-center i ORGICON"></div>
+
+                        </button>
+                    </navlink>
+                </div>
+                <div class="camera-btn m-2" id='Cast-up'>
+                    <navlink href="/Market" class="Apollo-btn-active Main-btn">
+                        <button data-mdb-ripple="true"
+                                data-mdb-ripple-color="light" onclick='' class="elevation-2 flex flex-col h-14 w-14 justify-items-center items-center ">
+                            <div class="relative m-3 justify-center i MARKETICON">
+
+                            </div>
+                        </button>
+                    </navlink>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+</div>
