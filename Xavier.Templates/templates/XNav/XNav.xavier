@@ -18,7 +18,6 @@ x{
 	margin: 0;
 	padding: 0;
 }
-
 /* =====================
     Base styles
 ====================== */
@@ -240,7 +239,8 @@ x{
             <span class='btn-bar middle'></span>
             <span class='btn-bar bottom'></span>
         </label>
-
+        
+        
         <!-- Menu -->
         <nav class="main-${this.id}-nav">
             <!-- This covers the whole background of the dropped menu -->

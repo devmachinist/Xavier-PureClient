@@ -13,18 +13,18 @@
             border-radius: 2px;
         }
     </style>
-    <section class="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-32">
+    <section class="bg-gradient-to-r from-brandgray-900 to-brandgray-700 text-white py-32">
         <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
             <div class="md:w-1/2 text-center md:text-left">
                 <h2 class="text-3xl font-extrabold mb-4">The Xavier Framework</h2>
-              <h3>by DEVMACHINIST</h3>
+              <h3 class="text-brandgray-300">by DEVMACHINIST</h3>
               <br/>
                 <p class="text-2xl mb-8">Where code versatility lives.</p>
               <br/>
-                <a href="#get-started" class="bg-white hover:bg-blue-400 text-blue-800 hover:text-blue-200 mt-10 font-bold py-2 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105">Get Started</a>
+                <a href="Documentation" class="bg-white hover:bg-blue-400 text-blue-800 hover:text-blue-200 mt-10 font-bold py-2 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105">Get Started</a>
             </div>
             <div class="md:w-1/2 mt-8 md:mt-0">
-                <img src="images/logo.png" alt="Xavier Framework" class="rounded-lg shadow-2xl">
+                <img src="images/logo.png" alt="Xavier Framework" class="">
             </div>
         </div>
     </section>

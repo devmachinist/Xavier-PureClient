@@ -15,13 +15,6 @@ _processes:
     RedirectStandardOutput: false
     RedirectStandardError: false
     CreateNoWindow: false 
-  - FileName: powershell
-    Arguments: -ExecutionPolicy Bypass -NoLogo -NoProfile -Command cd ~/source/repos/Xavier.React/ClientApp; npm start;
-    UseShellExecute: true
-    RedirectStandardInput: false
-    RedirectStandardOutput: false
-    RedirectStandardError: false
-    CreateNoWindow: false 
 Endpoints:
   XavierOne:
     Address: 127.0.0.1

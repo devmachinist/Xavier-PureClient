@@ -7,7 +7,7 @@ this.Name = "Components";
 this.Path = '';
 this.dataset = null;
 this.ContentType = "text/html";
-this.Xid = "07ae690c-0fd1-4f23-8397-b909fe143b1b";
+this.Xid = "39ca83e5-3034-4378-ae61-8c1366596663";
 this.state = {"Id":null,"Hash":null};
 this.Scripts = ` 
     var hw = Documentation.HelloWorld().then(r => {return r});
@@ -62,8 +62,8 @@ async replaceElements(target){
   body = this.Element.innerHTML;
    while(this.Element.firstChild) this.Element.removeChild(this.Element.lastChild);
   // Add it to the InnerHTML property of the object
-//  window[`9f0c8641-83fb-45fb-a9dc-daed599f5dd4${elCount}`].InnerHTML = body;
-//  window[`9f0c8641-83fb-45fb-a9dc-daed599f5dd4${elCount}`].Render(window[`9f0c8641-83fb-45fb-a9dc-daed599f5dd4${elCount}`]);
+//  window[`b5cabfc3-c297-44f1-9907-bf4e5057c4b3${elCount}`].InnerHTML = body;
+//  window[`b5cabfc3-c297-44f1-9907-bf4e5057c4b3${elCount}`].Render(window[`b5cabfc3-c297-44f1-9907-bf4e5057c4b3${elCount}`]);
         
         this.InnerHTML = body;
         this.Element.insertAdjacentHTML('afterbegin',`@page
@@ -295,7 +295,7 @@ this.Name = "Documentation";
 this.Path = '';
 this.dataset = null;
 this.ContentType = "text/html";
-this.Xid = "2fadf9de-535a-4898-8b41-35db36841e27";
+this.Xid = "eae915d2-1a4f-49f2-a597-47a54db25a00";
 this.state = {"Id":null,"Hash":null};
 this.Scripts = ` 
     var hw = Documentation.HelloWorld().then(r => {return r});
@@ -350,8 +350,8 @@ async replaceElements(target){
   body = this.Element.innerHTML;
    while(this.Element.firstChild) this.Element.removeChild(this.Element.lastChild);
   // Add it to the InnerHTML property of the object
-//  window[`80fde0a2-e864-4e95-88fa-5f85bc0dbf30${elCount}`].InnerHTML = body;
-//  window[`80fde0a2-e864-4e95-88fa-5f85bc0dbf30${elCount}`].Render(window[`80fde0a2-e864-4e95-88fa-5f85bc0dbf30${elCount}`]);
+//  window[`9c448265-0c33-415e-9341-7ea36b189386${elCount}`].InnerHTML = body;
+//  window[`9c448265-0c33-415e-9341-7ea36b189386${elCount}`].Render(window[`9c448265-0c33-415e-9341-7ea36b189386${elCount}`]);
         
         this.InnerHTML = body;
         this.Element.insertAdjacentHTML('afterbegin',`@page
@@ -722,7 +722,7 @@ this.Name = "Homepage";
 this.Path = '';
 this.dataset = null;
 this.ContentType = "text/html";
-this.Xid = "fbb9b061-3d37-47e2-9eb2-41ce4f2a6324";
+this.Xid = "4d43fc9e-7f93-4865-8b94-f196ef1b6b6c";
 this.state = {"Id":null,"Hash":null};
 this.Scripts = ``;
 this.PyImports = "import json\n";
@@ -773,8 +773,8 @@ async replaceElements(target){
   body = this.Element.innerHTML;
    while(this.Element.firstChild) this.Element.removeChild(this.Element.lastChild);
   // Add it to the InnerHTML property of the object
-//  window[`4d72ac51-7596-466a-a095-c48ba9130e30${elCount}`].InnerHTML = body;
-//  window[`4d72ac51-7596-466a-a095-c48ba9130e30${elCount}`].Render(window[`4d72ac51-7596-466a-a095-c48ba9130e30${elCount}`]);
+//  window[`a09b043a-7b1f-4a05-a5f2-9afa8884b428${elCount}`].InnerHTML = body;
+//  window[`a09b043a-7b1f-4a05-a5f2-9afa8884b428${elCount}`].Render(window[`a09b043a-7b1f-4a05-a5f2-9afa8884b428${elCount}`]);
         
         this.InnerHTML = body;
         this.Element.insertAdjacentHTML('afterbegin',`
@@ -792,18 +792,18 @@ async replaceElements(target){
             border-radius: 2px;
         }
     <\/style>
-    <section class="bg-gradient-to-r from-purple-600 to-pink-600 text-white py-32">
+    <section class="bg-gradient-to-r from-brandgray-900 to-brandgray-700 text-white py-32">
         <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
             <div class="md:w-1\/2 text-center md:text-left">
                 <h2 class="text-3xl font-extrabold mb-4">The Xavier Framework<\/h2>
-              <h3>by DEVMACHINIST<\/h3>
+              <h3 class="text-brandgray-300">by DEVMACHINIST<\/h3>
               <br\/>
                 <p class="text-2xl mb-8">Where code versatility lives.<\/p>
               <br\/>
-                <a href="#get-started" class="bg-white hover:bg-blue-400 text-blue-800 hover:text-blue-200 mt-10 font-bold py-2 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105">Get Started<\/a>
+                <a href="Documentation" class="bg-white hover:bg-blue-400 text-blue-800 hover:text-blue-200 mt-10 font-bold py-2 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105">Get Started<\/a>
             <\/div>
             <div class="md:w-1\/2 mt-8 md:mt-0">
-                <img src="images\/logo.png" alt="Xavier Framework" class="rounded-lg shadow-2xl">
+                <img src="images\/logo.png" alt="Xavier Framework" class="">
             <\/div>
         <\/div>
     <\/section>
@@ -972,13 +972,13 @@ this.Title = "Xavier | A new frame";
 this.Route = '/';
 this.Description = "How will we know when we\u0027ve reached the stars?";
 this.ShouldRender = true;
-this.Config = {"Id":"15b39414-b558-4751-8f21-14e4d867b8a4","RestURI":"window.location \u002B \u0027api/\u0027","Name":"Config","Request":"{\u0027id\u0027: \u0027556647\u0027,\u0027dir\u0027:\u0027dir\u0027}","Response":null};
+this.Config = {"Id":"8d83da0c-d930-4b16-95e1-68f5c2312240","RestURI":"window.location \u002B \u0027api/\u0027","Name":"Config","Request":"{\u0027id\u0027: \u0027556647\u0027,\u0027dir\u0027:\u0027dir\u0027}","Response":null};
 this.item = "This is the item";
 this.Name = "Ssr";
 this.Path = '';
 this.dataset = null;
 this.ContentType = "text/html";
-this.Xid = "18dbf72c-6d99-4a2c-8906-359e3d1d6f5e";
+this.Xid = "d011ea6d-2ea6-4a22-ab48-0e0b15ac2750";
 this.state = {"Id":null,"Hash":null};
 this.Scripts = ` 
     var hw = Ssr.HelloWorld().then(r => {return r});
@@ -1033,8 +1033,8 @@ async replaceElements(target){
   body = this.Element.innerHTML;
    while(this.Element.firstChild) this.Element.removeChild(this.Element.lastChild);
   // Add it to the InnerHTML property of the object
-//  window[`e416d46f-1325-42d3-ba3f-79e87d570772${elCount}`].InnerHTML = body;
-//  window[`e416d46f-1325-42d3-ba3f-79e87d570772${elCount}`].Render(window[`e416d46f-1325-42d3-ba3f-79e87d570772${elCount}`]);
+//  window[`68fd7e34-40a8-45d8-8949-6aa0a3294419${elCount}`].InnerHTML = body;
+//  window[`68fd7e34-40a8-45d8-8949-6aa0a3294419${elCount}`].Render(window[`68fd7e34-40a8-45d8-8949-6aa0a3294419${elCount}`]);
         
         this.InnerHTML = body;
         this.Element.insertAdjacentHTML('afterbegin',`@page
@@ -1306,7 +1306,7 @@ this.Name = "AuthCallback";
 this.Path = '';
 this.dataset = null;
 this.ContentType = "text/html";
-this.Xid = "d4efb2a3-1452-48b9-b692-6b0146146ad9";
+this.Xid = "43cab9d9-cc4c-4b84-ad72-592302af92ea";
 this.state = {"Id":null,"Hash":null};
 this.Scripts = ` 
 
@@ -1478,8 +1478,8 @@ async replaceElements(target){
   body = this.Element.innerHTML;
    while(this.Element.firstChild) this.Element.removeChild(this.Element.lastChild);
   // Add it to the InnerHTML property of the object
-//  window[`32c70c48-bdad-44c7-bb36-6bc36904e2b4${elCount}`].InnerHTML = body;
-//  window[`32c70c48-bdad-44c7-bb36-6bc36904e2b4${elCount}`].Render(window[`32c70c48-bdad-44c7-bb36-6bc36904e2b4${elCount}`]);
+//  window[`ced39236-88b2-4a36-a6c7-fc76f7900f23${elCount}`].InnerHTML = body;
+//  window[`ced39236-88b2-4a36-a6c7-fc76f7900f23${elCount}`].Render(window[`ced39236-88b2-4a36-a6c7-fc76f7900f23${elCount}`]);
         
         this.InnerHTML = body;
         this.Element.insertAdjacentHTML('afterbegin',``);
@@ -1739,7 +1739,7 @@ this.Name = "ForgotPassword";
 this.Path = '';
 this.dataset = null;
 this.ContentType = "text/html";
-this.Xid = "5cb3a400-8931-46e2-a7b3-7dd40bd8193a";
+this.Xid = "6ed4dfc8-ceef-4818-aeee-98468e42b4b6";
 this.Route = '';
 this.state = {"Id":null,"Hash":null};
 this.Scripts = ``;
@@ -1792,8 +1792,8 @@ async replaceElements(target){
   body = this.Element.innerHTML;
    while(this.Element.firstChild) this.Element.removeChild(this.Element.lastChild);
   // Add it to the InnerHTML property of the object
-//  window[`c67d9e1b-161e-4826-8db0-293f20be1b0d${elCount}`].InnerHTML = body;
-//  window[`c67d9e1b-161e-4826-8db0-293f20be1b0d${elCount}`].Render(window[`c67d9e1b-161e-4826-8db0-293f20be1b0d${elCount}`]);
+//  window[`4931cf25-4f7e-4147-9987-9f83b20b7508${elCount}`].InnerHTML = body;
+//  window[`4931cf25-4f7e-4147-9987-9f83b20b7508${elCount}`].Render(window[`4931cf25-4f7e-4147-9987-9f83b20b7508${elCount}`]);
         
         this.InnerHTML = body;
         this.Element.insertAdjacentHTML('afterbegin',`<div class="flex flex-col items-center h-full w-full m-0">
@@ -1955,7 +1955,7 @@ this.Name = "Login";
 this.Path = '';
 this.dataset = null;
 this.ContentType = "text/html";
-this.Xid = "503ee317-42d0-47a1-b79b-b3bcfc4a2635";
+this.Xid = "b1e5934e-b70d-4448-90b7-b7fdb7f6bb22";
 this.state = {"Id":null,"Hash":null};
 this.Scripts = ``;
 this.PyImports = "import json\n";
@@ -2006,8 +2006,8 @@ async replaceElements(target){
   body = this.Element.innerHTML;
    while(this.Element.firstChild) this.Element.removeChild(this.Element.lastChild);
   // Add it to the InnerHTML property of the object
-//  window[`1d150bd3-3503-4ace-8f10-93efbe1508d0${elCount}`].InnerHTML = body;
-//  window[`1d150bd3-3503-4ace-8f10-93efbe1508d0${elCount}`].Render(window[`1d150bd3-3503-4ace-8f10-93efbe1508d0${elCount}`]);
+//  window[`06c3e22f-0d2e-450c-9888-87549676b139${elCount}`].InnerHTML = body;
+//  window[`06c3e22f-0d2e-450c-9888-87549676b139${elCount}`].Render(window[`06c3e22f-0d2e-450c-9888-87549676b139${elCount}`]);
         
         this.InnerHTML = body;
         this.Element.insertAdjacentHTML('afterbegin',`
@@ -2229,7 +2229,7 @@ this.Name = "Register";
 this.Path = '';
 this.dataset = null;
 this.ContentType = "text/html";
-this.Xid = "bcd0e145-2567-4602-b111-a04410688cdd";
+this.Xid = "14ff8b0c-42d3-4250-abde-316681c16e82";
 this.state = {"Id":null,"Hash":null};
 this.Scripts = ``;
 this.PyImports = "import json\n";
@@ -2280,8 +2280,8 @@ async replaceElements(target){
   body = this.Element.innerHTML;
    while(this.Element.firstChild) this.Element.removeChild(this.Element.lastChild);
   // Add it to the InnerHTML property of the object
-//  window[`d00a3a1a-3e8d-4d78-bc10-214598b17ba7${elCount}`].InnerHTML = body;
-//  window[`d00a3a1a-3e8d-4d78-bc10-214598b17ba7${elCount}`].Render(window[`d00a3a1a-3e8d-4d78-bc10-214598b17ba7${elCount}`]);
+//  window[`b9170fd3-faba-4943-999b-3ae176e4c545${elCount}`].InnerHTML = body;
+//  window[`b9170fd3-faba-4943-999b-3ae176e4c545${elCount}`].Render(window[`b9170fd3-faba-4943-999b-3ae176e4c545${elCount}`]);
         
         this.InnerHTML = body;
         this.Element.insertAdjacentHTML('afterbegin',`<div class="flex inline-flex items-center pt-20 mx-20 text-center sm:mx-28 md:mx-52 lg:mx-144">
@@ -2481,7 +2481,7 @@ this.Name = "ResetPassword";
 this.Path = '';
 this.dataset = null;
 this.ContentType = "text/html";
-this.Xid = "50cade3a-3fb1-48e8-b54f-ea53c102c68a";
+this.Xid = "75486f78-f9bf-4a5b-a40a-0e91ee6ab469";
 this.Route = '';
 this.state = {"Id":null,"Hash":null};
 this.Scripts = ``;
@@ -2534,8 +2534,8 @@ async replaceElements(target){
   body = this.Element.innerHTML;
    while(this.Element.firstChild) this.Element.removeChild(this.Element.lastChild);
   // Add it to the InnerHTML property of the object
-//  window[`86c6e1f1-da04-4bc1-8c7e-a0bd6f32b045${elCount}`].InnerHTML = body;
-//  window[`86c6e1f1-da04-4bc1-8c7e-a0bd6f32b045${elCount}`].Render(window[`86c6e1f1-da04-4bc1-8c7e-a0bd6f32b045${elCount}`]);
+//  window[`68a19d58-41b7-4c0d-977f-648932cc7a5e${elCount}`].InnerHTML = body;
+//  window[`68a19d58-41b7-4c0d-977f-648932cc7a5e${elCount}`].Render(window[`68a19d58-41b7-4c0d-977f-648932cc7a5e${elCount}`]);
         
         this.InnerHTML = body;
         this.Element.insertAdjacentHTML('afterbegin',`<h4>Reset your password.<\/h4>
@@ -2702,7 +2702,7 @@ this.Name = "Anonymous";
 this.Path = '';
 this.dataset = null;
 this.ContentType = "text/html";
-this.Xid = "af57eaf3-114d-43f5-90f3-2214b7dce3f3";
+this.Xid = "0ba99e03-c9fe-491e-8d08-3f750983c6b4";
 this.state = {"Id":null,"Hash":null};
 this.Scripts = ` 
 let username = "";
@@ -2893,8 +2893,8 @@ async replaceElements(target){
   body = this.Element.innerHTML;
    while(this.Element.firstChild) this.Element.removeChild(this.Element.lastChild);
   // Add it to the InnerHTML property of the object
-//  window[`28220789-36a4-4e73-8db6-0d8c107843a6${elCount}`].InnerHTML = body;
-//  window[`28220789-36a4-4e73-8db6-0d8c107843a6${elCount}`].Render(window[`28220789-36a4-4e73-8db6-0d8c107843a6${elCount}`]);
+//  window[`e0730f0a-c05f-44aa-9ae0-0658480241cb${elCount}`].InnerHTML = body;
+//  window[`e0730f0a-c05f-44aa-9ae0-0658480241cb${elCount}`].Render(window[`e0730f0a-c05f-44aa-9ae0-0658480241cb${elCount}`]);
         
         this.InnerHTML = body;
         this.Element.insertAdjacentHTML('afterbegin',`
@@ -3184,7 +3184,7 @@ this.Name = "Authorize";
 this.Path = '';
 this.dataset = null;
 this.ContentType = "text/html";
-this.Xid = "9293f6bc-239b-4d6e-ad0a-faf2e105224f";
+this.Xid = "3930e29d-ab21-40a3-bbe8-e7b8b2e0be7c";
 this.state = {"Id":null,"Hash":null};
 this.Scripts = ` 
 
@@ -3373,8 +3373,8 @@ async replaceElements(target){
   body = this.Element.innerHTML;
    while(this.Element.firstChild) this.Element.removeChild(this.Element.lastChild);
   // Add it to the InnerHTML property of the object
-//  window[`4b660a3d-8d39-4ac2-8882-5857d291bcd0${elCount}`].InnerHTML = body;
-//  window[`4b660a3d-8d39-4ac2-8882-5857d291bcd0${elCount}`].Render(window[`4b660a3d-8d39-4ac2-8882-5857d291bcd0${elCount}`]);
+//  window[`5f9061d1-c9c3-4381-a5fc-4bd0f538c369${elCount}`].InnerHTML = body;
+//  window[`5f9061d1-c9c3-4381-a5fc-4bd0f538c369${elCount}`].Render(window[`5f9061d1-c9c3-4381-a5fc-4bd0f538c369${elCount}`]);
         
         this.InnerHTML = body;
         this.Element.insertAdjacentHTML('afterbegin',`
@@ -3659,7 +3659,7 @@ this.Name = "MainNav";
 this.Path = '';
 this.dataset = null;
 this.ContentType = "text/html";
-this.Xid = "979b3370-2037-49ae-9567-6e23ebbdd802";
+this.Xid = "b6129a96-9b56-44f3-a1ed-9af6fafac73b";
 this.state = {"Id":null,"Hash":null};
 this.Scripts = ` 
 import "\/Xavier.ShopLite.js";
@@ -3729,8 +3729,8 @@ async replaceElements(target){
   body = this.Element.innerHTML;
    while(this.Element.firstChild) this.Element.removeChild(this.Element.lastChild);
   // Add it to the InnerHTML property of the object
-//  window[`0833d493-f6ef-404e-90ef-8587c381b540${elCount}`].InnerHTML = body;
-//  window[`0833d493-f6ef-404e-90ef-8587c381b540${elCount}`].Render(window[`0833d493-f6ef-404e-90ef-8587c381b540${elCount}`]);
+//  window[`869c419a-b7f9-4a66-a48a-b69c89905b4d${elCount}`].InnerHTML = body;
+//  window[`869c419a-b7f9-4a66-a48a-b69c89905b4d${elCount}`].Render(window[`869c419a-b7f9-4a66-a48a-b69c89905b4d${elCount}`]);
         
         this.InnerHTML = body;
         this.Element.insertAdjacentHTML('afterbegin',`
@@ -3991,7 +3991,7 @@ this.Name = "SimpleNav";
 this.Path = '';
 this.dataset = null;
 this.ContentType = "text/html";
-this.Xid = "d685318b-9c8c-460e-807d-da41e735aafa";
+this.Xid = "1e30953b-5663-49b7-a116-4438179fc6a8";
 this.state = {"Id":null,"Hash":null};
 this.Scripts = ``;
 this.PyImports = "import json\n";
@@ -4042,8 +4042,8 @@ async replaceElements(target){
   body = this.Element.innerHTML;
    while(this.Element.firstChild) this.Element.removeChild(this.Element.lastChild);
   // Add it to the InnerHTML property of the object
-//  window[`88add41f-2b52-43f4-9a23-435c00a28d2c${elCount}`].InnerHTML = body;
-//  window[`88add41f-2b52-43f4-9a23-435c00a28d2c${elCount}`].Render(window[`88add41f-2b52-43f4-9a23-435c00a28d2c${elCount}`]);
+//  window[`1faf4e52-5480-47a4-b1c7-9471d383f1e0${elCount}`].InnerHTML = body;
+//  window[`1faf4e52-5480-47a4-b1c7-9471d383f1e0${elCount}`].Render(window[`1faf4e52-5480-47a4-b1c7-9471d383f1e0${elCount}`]);
         
         this.InnerHTML = body;
         this.Element.insertAdjacentHTML('afterbegin',`<div class="flex flex-row">
@@ -4244,7 +4244,7 @@ this.Name = "WorkNav";
 this.Path = '';
 this.dataset = null;
 this.ContentType = "text/html";
-this.Xid = "1fd0a98a-cc10-4c40-83dc-ad2a23af91e6";
+this.Xid = "7913a1ae-ec86-4566-bb17-241e490b94ab";
 this.Route = '';
 this.state = {"Id":null,"Hash":null};
 this.Scripts = ``;
@@ -4296,8 +4296,8 @@ async replaceElements(target){
   body = this.Element.innerHTML;
    while(this.Element.firstChild) this.Element.removeChild(this.Element.lastChild);
   // Add it to the InnerHTML property of the object
-//  window[`496a276c-410e-4568-9160-b23dd5ea5981${elCount}`].InnerHTML = body;
-//  window[`496a276c-410e-4568-9160-b23dd5ea5981${elCount}`].Render(window[`496a276c-410e-4568-9160-b23dd5ea5981${elCount}`]);
+//  window[`b6a42535-e70f-4f75-921c-0b2774b9f9d2${elCount}`].InnerHTML = body;
+//  window[`b6a42535-e70f-4f75-921c-0b2774b9f9d2${elCount}`].Render(window[`b6a42535-e70f-4f75-921c-0b2774b9f9d2${elCount}`]);
         
         this.InnerHTML = body;
         this.Element.insertAdjacentHTML('afterbegin',`<header class="flex w-full top-0 py-2 px-4 fixed bg-gradient-to-br
@@ -4509,7 +4509,7 @@ this.Name = "XBuilder";
 this.Path = '';
 this.dataset = null;
 this.ContentType = "text/html";
-this.Xid = "e4e14b5f-7da5-44d5-9b13-3d829cbe2139";
+this.Xid = "d3dce2dc-7b76-479a-ac96-9475ae6e67cf";
 this.Route = '';
 this.state = {"Id":null,"Hash":null};
 this.Scripts = ` 
@@ -4708,8 +4708,8 @@ async replaceElements(target){
   body = this.Element.innerHTML;
    while(this.Element.firstChild) this.Element.removeChild(this.Element.lastChild);
   // Add it to the InnerHTML property of the object
-//  window[`f2ccd1f9-944b-4bb3-8a5c-839ff902f487${elCount}`].InnerHTML = body;
-//  window[`f2ccd1f9-944b-4bb3-8a5c-839ff902f487${elCount}`].Render(window[`f2ccd1f9-944b-4bb3-8a5c-839ff902f487${elCount}`]);
+//  window[`9fbb32d2-ddae-48df-9cce-46b0f4c9e858${elCount}`].InnerHTML = body;
+//  window[`9fbb32d2-ddae-48df-9cce-46b0f4c9e858${elCount}`].Render(window[`9fbb32d2-ddae-48df-9cce-46b0f4c9e858${elCount}`]);
         
         this.InnerHTML = body;
         this.Element.insertAdjacentHTML('afterbegin',`
@@ -5008,7 +5008,7 @@ this.Name = "XCard";
 this.Path = '';
 this.dataset = null;
 this.ContentType = "text/html";
-this.Xid = "7220866a-3269-476e-8d3d-c7431b32b1f3";
+this.Xid = "5930f226-4966-4226-b1a5-237925ce8cc0";
 this.state = {"Id":null,"Hash":null};
 this.Scripts = ``;
 this.PyImports = "import json\n";
@@ -5059,8 +5059,8 @@ async replaceElements(target){
   body = this.Element.innerHTML;
    while(this.Element.firstChild) this.Element.removeChild(this.Element.lastChild);
   // Add it to the InnerHTML property of the object
-//  window[`3bf4f542-e5fb-4804-90e0-09c7c9e612b1${elCount}`].InnerHTML = body;
-//  window[`3bf4f542-e5fb-4804-90e0-09c7c9e612b1${elCount}`].Render(window[`3bf4f542-e5fb-4804-90e0-09c7c9e612b1${elCount}`]);
+//  window[`3de015ee-3a87-47df-ab18-ac503214cd28${elCount}`].InnerHTML = body;
+//  window[`3de015ee-3a87-47df-ab18-ac503214cd28${elCount}`].Render(window[`3de015ee-3a87-47df-ab18-ac503214cd28${elCount}`]);
         
         this.InnerHTML = body;
         this.Element.insertAdjacentHTML('afterbegin',`<style>
@@ -5335,7 +5335,7 @@ this.Name = "MainFooter";
 this.Path = '';
 this.dataset = null;
 this.ContentType = "text/html";
-this.Xid = "1bd6a774-3635-4dbf-b311-afeb63d75ba8";
+this.Xid = "833e82bb-bc4e-4135-a245-685a78d5ce7e";
 this.state = {"Id":null,"Hash":null};
 this.Scripts = ``;
 this.PyImports = "import json\n";
@@ -5386,8 +5386,8 @@ async replaceElements(target){
   body = this.Element.innerHTML;
    while(this.Element.firstChild) this.Element.removeChild(this.Element.lastChild);
   // Add it to the InnerHTML property of the object
-//  window[`4941845f-3b9d-4ee3-a25b-a0aea9913ade${elCount}`].InnerHTML = body;
-//  window[`4941845f-3b9d-4ee3-a25b-a0aea9913ade${elCount}`].Render(window[`4941845f-3b9d-4ee3-a25b-a0aea9913ade${elCount}`]);
+//  window[`8b4dfecc-02d0-42c2-9578-a84f11f4e485${elCount}`].InnerHTML = body;
+//  window[`8b4dfecc-02d0-42c2-9578-a84f11f4e485${elCount}`].Render(window[`8b4dfecc-02d0-42c2-9578-a84f11f4e485${elCount}`]);
         
         this.InnerHTML = body;
         this.Element.insertAdjacentHTML('afterbegin',`<footer class="bg-white">
@@ -5564,21 +5564,19 @@ async Render(){
 } }
   class XNAV {
 constructor(data){
-this.Title = "This is the title";
-this.ShouldRender = true;
 this.Route = '';
 this.JSON = "This is a description";
-this.Products = '[]';
 this.Name = "XNav";
 this.Path = '';
 this.dataset = null;
 this.ContentType = "text/html";
-this.Xid = "96776fdf-172e-49ea-818f-ffb7aaffaba1";
+this.Xid = "bc03f50b-d712-4de2-93ec-3d7981411d86";
 this.state = {"Id":null,"Hash":null};
 this.Scripts = ` 
 
      `;
 this.PyImports = "import json\n";
+this.ShouldRender = true;
 this.NodeJS = false;
 this.JSClientApi = true;
 this.BaseUrl = null;
@@ -5626,8 +5624,8 @@ async replaceElements(target){
   body = this.Element.innerHTML;
    while(this.Element.firstChild) this.Element.removeChild(this.Element.lastChild);
   // Add it to the InnerHTML property of the object
-//  window[`937b7a9b-c27f-4f6d-8e96-11a309ebb204${elCount}`].InnerHTML = body;
-//  window[`937b7a9b-c27f-4f6d-8e96-11a309ebb204${elCount}`].Render(window[`937b7a9b-c27f-4f6d-8e96-11a309ebb204${elCount}`]);
+//  window[`97f8d3e8-629d-455d-862d-1f5e9cad29a5${elCount}`].InnerHTML = body;
+//  window[`97f8d3e8-629d-455d-862d-1f5e9cad29a5${elCount}`].Render(window[`97f8d3e8-629d-455d-862d-1f5e9cad29a5${elCount}`]);
         
         this.InnerHTML = body;
         this.Element.insertAdjacentHTML('afterbegin',`
@@ -5638,7 +5636,6 @@ async replaceElements(target){
 	margin: 0;
 	padding: 0;
 }
-
 \/* =====================
     Base styles
 ====================== *\/
@@ -5860,7 +5857,8 @@ async replaceElements(target){
             <span class='btn-bar middle'><\/span>
             <span class='btn-bar bottom'><\/span>
         <\/label>
-
+        
+        
         <!-- Menu -->
         <nav class="main-${this.id}-nav">
             <!-- This covers the whole background of the dropped menu -->
@@ -5873,11 +5871,6 @@ async replaceElements(target){
 
                     <a href='\/Ssr' class='${this.id}-nav-item'>
                         <span> Ssr <\/span>
-                    <\/a>
-                
-
-                    <a href='\/React' class='${this.id}-nav-item'>
-                        <span> React <\/span>
                     <\/a>
                 
 
@@ -6029,7 +6022,7 @@ this.Name = "XTerminal";
 this.Path = '';
 this.dataset = null;
 this.ContentType = "text/html";
-this.Xid = "c1c5c628-93d3-4470-aa5d-2413b8732b10";
+this.Xid = "6c9223d4-cc8b-4a1a-9eba-1919803df63b";
 this.state = {"Id":null,"Hash":null};
 this.Scripts = ` 
 function Terminal(){
@@ -6442,8 +6435,8 @@ async replaceElements(target){
   body = this.Element.innerHTML;
    while(this.Element.firstChild) this.Element.removeChild(this.Element.lastChild);
   // Add it to the InnerHTML property of the object
-//  window[`26b19082-57f2-47c7-8bf6-0a348c8f5a6a${elCount}`].InnerHTML = body;
-//  window[`26b19082-57f2-47c7-8bf6-0a348c8f5a6a${elCount}`].Render(window[`26b19082-57f2-47c7-8bf6-0a348c8f5a6a${elCount}`]);
+//  window[`d8483b61-7e88-4996-9f49-b641ef1ae676${elCount}`].InnerHTML = body;
+//  window[`d8483b61-7e88-4996-9f49-b641ef1ae676${elCount}`].Render(window[`d8483b61-7e88-4996-9f49-b641ef1ae676${elCount}`]);
         
         this.InnerHTML = body;
         this.Element.insertAdjacentHTML('afterbegin',`  

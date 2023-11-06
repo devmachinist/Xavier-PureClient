@@ -68,7 +68,7 @@
     <xnav id="MainNav"
           logo="./favicon-96x96.png"
           home="/"
-          name="Xavier" titlestyle="font-family:cursive; font:1.8em #FFF"
+          name="avier" titlestyle="font-family:cursive; font:1.8em #FFF"
           fg="white" bg="#445"
           menubg="#334"
           menufg="#FFF"

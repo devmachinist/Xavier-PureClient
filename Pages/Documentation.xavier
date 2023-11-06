@@ -114,7 +114,6 @@ pre code {
     <xnav id="MainNav"
           logo="./favicon-96x96.png"
           home="/"
-          logoshade="0px 0px 12px #00F"
           name="avier" titlestyle="font-family:cursive; font:1.8em #00F"
           fg="black" bg="white"
           menubg="#FFF"
