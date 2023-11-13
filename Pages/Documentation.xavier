@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="/css/dist/Site.css" />
   <link rel="stylesheet" href="/css/fontello/fontello-330f88e4/css/fontello.css">
   <link rel="stylesheet" href="/css/site.css">
-
   <style>
     /* Custom styles for the documentation page */
 section{

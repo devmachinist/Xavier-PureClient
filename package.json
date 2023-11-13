@@ -13,7 +13,6 @@
   "publisher": "Devmachinist",
   "license": "MIT",
   "dependencies": {
-    "codeflask": "^1.4.1",
     "esbuild": "0.17.15"
   },
   "devDependencies": {
@@ -23,8 +22,7 @@
     "@tailwindcss/typography": "^0.5.2",
     "autoprefixer": "^10.3.6",
     "postcss": "^8.3.8",
-    "tailwindcss": "^3.2.4",
-    "tailwindcss-elevation": "^1.0.1",
+    "tailwindcss": "^3.3.5",
     "tailwindcss-gradients": "^3.0.0",
     "tailwindcss-scroll-snap": "^1.1.0"
   }
