@@ -10,14 +10,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.WebUtilities;
 using Xavier;
 using Microsoft.AspNetCore.Identity.UI.Services;
-using ShopContext;
 
 namespace Xavier.PureClient
 {
     public partial class ForgotPassword : XavierNode
     {
-        public UserManager<User> usermanager;
-        public IEmailSender emailsender;
 
         public ForgotPassword(XavierNode xavierNode) : base(xavierNode)
         {

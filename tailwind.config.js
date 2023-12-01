@@ -201,11 +201,9 @@ module.exports = {
         }
     },
     plugins: [
-        require('tailwindcss-elevation'),
         require('@tailwindcss/typography'),
         require('@tailwindcss/forms'),
         require('@tailwindcss/line-clamp'),
         require('@tailwindcss/aspect-ratio'),
-        require('tw-elements/dist/plugin')
     ],
 }

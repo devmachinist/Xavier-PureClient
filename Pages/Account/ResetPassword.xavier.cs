@@ -9,13 +9,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.WebUtilities;
 using Xavier;
-using ShopContext;
 
 namespace Xavier.PureClient
 {
     public partial class ResetPassword : XavierNode
         {
-        public UserManager<User> usermanager;
 
         public ResetPassword(XavierNode xavierNode) : base(xavierNode)
         {

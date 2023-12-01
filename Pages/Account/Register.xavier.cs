@@ -12,7 +12,6 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
-using ShopContext;
 using Xavier;
 
 namespace Xavier.PureClient
@@ -21,9 +20,7 @@ namespace Xavier.PureClient
     {
         new public string Route {get;set;} = "'/register'";
         new public bool ShouldRender {get;set;} = true;
-        private readonly SignInManager<User> _signInManager;
 
-        private readonly UserManager<User> _userManager;
         private readonly ILogger<Register> _logger;
         private readonly IEmailSender _emailSender;
 

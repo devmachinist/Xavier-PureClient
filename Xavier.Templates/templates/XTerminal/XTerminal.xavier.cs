@@ -1,3 +1,6 @@
+using Xavier;
+
+
 namespace Xavier.PureClient
 {
     public partial class XTerminal : Xavier.XavierNode

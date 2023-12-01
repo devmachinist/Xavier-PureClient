@@ -1,17 +1,13 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.JSInterop;
-using ShopContext;
 
 namespace Xavier.PureClient
 {
     public partial class WorkNav : XavierNode
     {
         public string SearchText { get; set; } = "";
-        public List<User> UserSearchResults { get; set; } = new List<User>();
-        public List<Product> ComponentSearchResults { get; set; } = new List<Product>();
-        public List<Game> EntitySearchResults { get; set; } = new List<Game>();
-        new public bool ShouldRender { get; set; } = true;
+          new public bool ShouldRender { get; set; } = true;
         public WorkNav(XavierNode xavierNode) : base(xavierNode) { }
         public WorkNav() { }
     

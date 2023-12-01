@@ -1,4 +1,4 @@
-
+using Xavier;
 namespace Xavier.PureClient
 {
     public partial class AuthCallback : Xavier.XavierNode

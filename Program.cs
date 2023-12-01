@@ -61,7 +61,7 @@ namespace Xavier.PureClient
             // in order to give you direct access to the react app
             app.UseStaticFiles(new StaticFileOptions()
             {
-                FileProvider = new PhysicalFileProvider("C:/Users/x/source/repos/Xavier.Singularity/Xavier.PureClient/node_modules"),
+                FileProvider = new PhysicalFileProvider(Environment.CurrentDirectory + "/node_modules"),
                 RequestPath = new PathString("/node_modules")
             });
             //This targets your SSR components by searching for @page in the first line of the files and treating them
@@ -74,7 +74,6 @@ namespace Xavier.PureClient
             app.UseSwagger();
             app.UseSwaggerUI();
             app.UseRouting();
-            //Constellation.ControlConstellation(XavierOne);
             app.Run();
 
         }
