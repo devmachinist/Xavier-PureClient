@@ -2,9 +2,10 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/bin/Debug/net7.0
+/bin
 /Live/Assets
 /node_modules
 /obj
 /Properties
 /Xavier.PureClient.csproj.user
+

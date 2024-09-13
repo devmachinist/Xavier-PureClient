@@ -104,7 +104,7 @@
     <div class="code-snippet">
       <pre><code>public class SsrController : EngineController&lt;Ssr&gt;
 {
-    public Ssr Controller() 
+    public SsrController() 
     {
         // Controller initialization code here
     }

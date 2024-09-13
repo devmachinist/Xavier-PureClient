@@ -4,9 +4,9 @@
   "description": "lxNewsxl build controls for styles.js and distribution.",
   "main": "daemon.js",
   "scripts": {
-    "css:build": "npx tailwindcss -i ./Live/css/input.css -o ./Live/css/dist/Site.css ",
-    "css:build:watch": "npx tailwindcss -i ./Live/css/input.css -o ./Live/css/dist/Site.css --watch",
-    "js:build:client": "esbuild JSEngine/scupper.js --bundle --outfile=Live/js/dist/daemon.js",
+    "css:build": "npx tailwindcss -i ./wwwroot/css/input.css -o ./wwwroot/css/dist/Site.css ",
+    "css:build:watch": "npx tailwindcss -i ./wwwroot/css/input.css -o ./wwwroot/css/dist/Site.css --watch",
+    "js:build:client": "esbuild JSEngine/scupper.js --bundle --outfile=wwwroot/js/dist/daemon.js",
     "test": "test"
   },
   "author": "Matthew Teague",

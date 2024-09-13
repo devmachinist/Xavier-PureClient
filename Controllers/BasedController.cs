@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Routing;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System.Text.Json;
 using System.Text.Json.Nodes;
-using Xavier.Constellations;
 
 namespace Xavier.PureClient.Controllers
 {
@@ -15,14 +14,6 @@ namespace Xavier.PureClient.Controllers
 
         }
     }
-    public class ConstellationController : EngineController<Constellation>
-    {
-        public ConstellationController() 
-        {
-
-        }
-    }
-
 
     public class EngineController<T> : ControllerBase where T : class, new()
     {

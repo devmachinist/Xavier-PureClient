@@ -62,17 +62,19 @@ To initialize Xavier in a .NET app, follow these steps:
 
 ```csharp
 using Xavier;
-//or
+//and
 using Xavier.AOT;
 ```
 
  Call the `Xavier.Memory.Init` method to initialize Xavier with the desired parameters. This method builds your assembly into the specified destination. The last part of the destination path should have a `.js` extension.
 
 ```csharp
-await Xavier.Memory.Init(root, destination, assembly);
+var memory = new Xavier.Memory();
+
+await memory.Init(root, destination, assembly);
 ```
 
-or with AOT
+or with AOT pass in your memory object without calling memory.Init()...
 
 ```csharp
 Parallel.Invoke(async () =>
@@ -99,16 +101,16 @@ Here's an example of a `.xavier` file that demonstrates the usage of template st
 
 {{
 let username = "";
-var msalInstance = {};
 var target = '${this.target}'
 
 // JavaScript code here
 
 
-// More JavaScript code here
 }}
 
 x{ 
+// C# Code here
+
     var Items = new[]{"item1","item2","item3"};
     @foreach( var k in items){
 
